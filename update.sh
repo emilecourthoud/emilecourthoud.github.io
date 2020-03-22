@@ -1,4 +1,4 @@
-#HOW to run this file: ./update.sh
+#HOW to run this file: type <./update.sh> on the command line from the folder where update.sh bash file is saved
 #WHY? It simplifies the git add / commit / push procedure
 
 
