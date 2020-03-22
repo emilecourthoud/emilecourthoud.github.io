@@ -142,10 +142,10 @@ nav.navbar.fixed-to-top{
 }
 
 .navbar-default{
-    background: #272935;
+    background: rgba(0, 0, 0, 0)
 	border: none;
 	border-bottom: none;
-	opacity: 0;
+	opacity: 1;
 	display: none;
 	z-index: 9999;
 }
