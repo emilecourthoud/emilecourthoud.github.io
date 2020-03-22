@@ -1,5 +1,5 @@
-#Termporarily authenticating with Git repositories
-#git config --global credential.helper 'cache --timeout 7200'
+#HOW to run this file: ./update.sh
+#WHY? It simplifies the git add / commit / push procedure
 
 
 # Directory
@@ -16,7 +16,16 @@ read -p "Enter commit description: " description
 # Commit code
 echo
 git add .
-git commit -m $description
+if [ -z $description ]
+then
+    echo Empty message. Commit with title "New update".
+    git commit -m "New update"
+else
+    git commit -m $description
+fi
+
+
+
 git push -u origin master
 
 # Update websitels
