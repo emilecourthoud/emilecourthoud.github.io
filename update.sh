@@ -7,7 +7,7 @@
 
 # Give name to the commit
 git status
-read -p "Enter commit description: " description
+read -p "Enter commit description (Ctrl+c to exit): " description
 
 # Commit code
 echo
