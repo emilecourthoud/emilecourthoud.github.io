@@ -188,6 +188,7 @@ Home sections
 ================================= */
 
 .home-section {
+	opacity: 0.5;
 	width: 100%;
 	padding: 150px 0px 150px 0px;
 }
