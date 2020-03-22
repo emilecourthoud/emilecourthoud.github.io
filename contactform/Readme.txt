@@ -1,5 +1,11 @@
-Read me
+#Welcome to my website
 
+## Website content
+
+
+
+
+##How to
 ----------------
 How to git status / add / push / commit?
 Type <./update.sh> in the terminal.
