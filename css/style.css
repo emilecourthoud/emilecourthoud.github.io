@@ -142,7 +142,7 @@ nav.navbar.fixed-to-top{
 }
 
 .navbar-default{
-    background: rgba(0, 0, 0, 0)
+    background: rgba(0, 0, 0, 0);
 	border: none;
 	border-bottom: none;
 	opacity: 1;
