@@ -9,9 +9,9 @@
 read -p "Enter commit description: " description
 
 # Remove public directory if it exists
-echo
-rm -r public/
-git submodule add -f -b master https://github.com/emilecourthoud/emilecourthoud.github.io.git public
+#echo
+#rm -r public/
+#git submodule add -f -b master https://github.com/emilecourthoud/emilecourthoud.github.io.git public
 
 # Commit code
 echo
@@ -20,14 +20,14 @@ git commit -m $description
 git push -u origin master
 
 # Update websitels
-echo
-hugo
+#echo
+#hugo
 
 # Publish website
-cd public
-git add .
-git commit -m "Update website"
-git push origin master
+#cd public
+#git add .
+#git commit -m "Update website"
+#git push origin master
 
 
 #hugo server -D
