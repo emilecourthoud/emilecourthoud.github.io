@@ -26,10 +26,8 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
-	color: #3a3a3a;
-	font-weight: 700;
 	margin-bottom: 20px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;;
 }
 
 a {
@@ -99,14 +97,23 @@ margin, padding
 /* Back to top button */
 .back-to-top {
   position: fixed;
-  display: none;
+  display: block;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
   border-radius: 2px;
   right: 15px;
   bottom: 15px;
-  transition: background 0.5s;
+  transition: 0.5s;
   z-index:1000;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #F9AA33;
+}
+
+.back-to-top:hover {
+  background: #F9AA33;
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {
@@ -124,8 +131,10 @@ Navbar
 ================================= */
 
 nav.navbar{
+    z-index:999;
+    overflow: hidden;
 	position: fixed;
-	top: -80px;
+	top: 0;
 	margin-bottom: 0px;
 	padding: 10px 0px 10px 0px;
 	width: 100%;
@@ -134,7 +143,7 @@ nav.navbar{
 }
 
 .navbar-nav{
-	float: right;
+	float: left;
 }
 
 nav.navbar.fixed-to-top{
@@ -142,18 +151,17 @@ nav.navbar.fixed-to-top{
 }
 
 .navbar-default{
-    background: rgba(0, 0, 0, 0);
 	border: none;
 	border-bottom: none;
 	opacity: 1;
 	display: none;
 	z-index: 9999;
+	background-color: transparent;
 }
 
-.navbar-default .navbar-nav>li>a {
-	color: #fff;
-	font-weight: 700;
-	text-transform: uppercase;
+.navbar-default .navbar-nav>li>a {s
+	font-weight: 300;
+	font-size: 1.5rem;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
@@ -187,10 +195,6 @@ Home sections
 /* --- heading --- */
 .section-heading {
 	margin-bottom: 50px;
-}
-
-.section-heading h2 {
-	font-size: 4rem;
 }
 
 .section-heading .heading-line {
@@ -378,7 +382,7 @@ Intro
 
 #intro .btn-get-started {
   z-index:999;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -450,6 +454,39 @@ About
 
 #about .content p:last-child {
   margin-bottom: 0;
+}
+
+#about .bio-title{
+    display: block;
+    text-align:center;
+    color:#fff
+
+}
+
+#about .bio-title h3 {
+    font-size:1.7rem;
+    color:#fff
+    font-weight:300
+}
+
+#about .bio-title h2 {
+    font-size:2.7rem;
+    color:#fff
+    font-weight:300
+}
+
+#about .portrait{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#profile{
+    text-align: center:
+    padding: 30px 10px;
+    position: relative;
 }
 
 /* ================================
@@ -784,7 +821,7 @@ Footer
 footer {
 	background: #232F34;
 	color: #fff;
-	padding: 50px 0 30px;
+	padding: 10px 0 10px;
 }
 
 footer a {
@@ -872,4 +909,47 @@ more media queries
 	header h1{
 		font-size: 70px;
 	}
+}
+
+/* ================================
+articles
+================================= */
+#articles .hcard {
+    display: -webkit-flex;
+    -webkit-flex-flow: row;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin: 0 20px 40px;
+    height: 50vh;
+    background: '#fff' center center;
+    background-size: cover;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    flex-direction: row;
+    width: 70vw;
+}
+
+#articles .hcard-desc {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #cccc33;
+   border-radius: 7pt;
+   background: #dddd88;
+   -webkit-flex: 3 1 60%;
+           flex: 3 1 60%;
+   -webkit-order: 1;
+           order: 1;
+}
+
+#articles .hcard-text {
+   margin: 4px;
+   padding: 5px;
+   border: 1px solid #8888bb;
+   border-radius: 7pt;
+   background: #ccccff;
+   -webkit-flex: 1 6 40%;
+           flex: 1 6 40%;
+   -webkit-order: 2;
+           order: 2;
 }
