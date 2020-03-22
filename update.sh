@@ -10,6 +10,7 @@ read -p "Enter commit description: " description
 
 # Commit code
 echo
+git status
 git add .
 
 if [ -z $description ]
