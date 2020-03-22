@@ -189,7 +189,6 @@ Home sections
 
 .home-section {
 	visibility: visible;
-	opacity: 0.5;
 	width: 100%;
 	padding: 150px 0px 150px 0px;
 }
@@ -337,13 +336,13 @@ Intro
 #intro .carousel-inner .item,
 #intro .carousel-inner .active.left,
 #intro .carousel-inner .active.right {
-  opacity: 0;
+  opacity: 0.3;
 }
 
 #intro .carousel-inner .active,
 #intro .carousel-inner .next.left,
 #intro .carousel-inner .prev.right {
-  opacity: 1;
+  opacity: 0.6;
   transition: 0.9s;
 }
 
