@@ -1,8 +1,9 @@
 #Welcome to my website
 
 ## Website content
-
-
+Welcome!
+I am a mechanical engineer as a background, a management consultant as a profession, a computer scientist as a vocation, a dreamer as a passion.
+I come from Aosta Valley <LINK>, an awesome spot in the core of the highest mountains of Europe. 
 
 
 ##How to
