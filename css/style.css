@@ -314,11 +314,14 @@ Intro
 }
 */
 
+/*
 #intro .carousel-content {
   text-align: center;
 }
+*/
 
 #introduction .portrait{
+	position: relative;
 	z-index:999;
     width: 300px;
     height: 300px;
