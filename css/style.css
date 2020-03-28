@@ -341,10 +341,12 @@ Intro
   }
 }
 
+/*
 #intro .carousel-inner .item {
   transition-property: opacity;
   background-position: center top;
 }
+*/
 
 #intro .carousel-inner .item,
 #intro .carousel-inner .active.left,
@@ -367,13 +369,14 @@ Intro
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-
+/*
 #intro .carousel-control-prev,
 #intro .carousel-control-next {
   color: #fff;
   position: absolute;
-  top: calc(50% - 40px);
+  top: calc(50% - 15px);
 }
+*/
 
 #intro .carousel-control-prev {
   left: 20px;
