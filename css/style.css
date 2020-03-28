@@ -312,7 +312,7 @@ Intro
     height: 300px;
     margin: 0px, 0px, 0px, 0px;
     border-radius: 50%;
-	object-fit: cover;
+	/*object-fit: cover;*/
 	top: -300px;
 }
 
