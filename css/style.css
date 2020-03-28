@@ -263,7 +263,6 @@ Intro
     margin: 0 auto;
     border-radius: 50%;
 	object-fit: cover;
-	top: 100;
 }
 
 #intro .item {
