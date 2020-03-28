@@ -282,12 +282,12 @@ Intro
   bottom: 0;
 }
 
+/*
 #intro .carousel-container {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  /*
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -297,12 +297,12 @@ Intro
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  */
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
 }
+*/
 
 #intro .carousel-content {
   text-align: center;
