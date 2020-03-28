@@ -139,7 +139,7 @@ nav.navbar{
 	padding: 10px 0px 10px 0px;
 	width: 100%;
 	border-radius: 0px;
-	/*transition: all 0.2s;*/
+	transition: all 0.2s;
 	background-color: rgba(0, 0, 0, 0.0);
 	transition: background-color 0.5 ease;
 }
