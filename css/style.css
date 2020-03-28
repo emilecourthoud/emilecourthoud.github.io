@@ -157,7 +157,6 @@ nav.navbar.fixed-to-top{
 	opacity: 1;
 	display: none;
 	z-index: 9999;
-	background-color: transparent;
 }
 
 .navbar-default .navbar-nav>li>a {
