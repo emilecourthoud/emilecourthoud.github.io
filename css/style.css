@@ -317,7 +317,6 @@ Intro
 }
 
 #intro h2 {
-  position: relative;
   z-index:999;
   color: #fff;
   margin: 30px auto 0 auto;
@@ -327,7 +326,6 @@ Intro
 }
 
 #intro p {
-  position: relative;
   z-index:999;
   width: 70%;
   -webkit-animation-delay: 0.4s;
