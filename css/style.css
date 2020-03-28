@@ -309,9 +309,9 @@ Intro
 #introduction .portrait{
 	position: top;
 	z-index:999;
-    width: 300px;
-    height: 300px;
-    margin: 0px, 0px, 0px, 0px;
+    width: 250px;
+    height: 250px;
+    margin: 0px 0px 0px 0px;
     border-radius: 50%;
 	object-fit: cover;
 	top: -300px;
@@ -321,7 +321,7 @@ Intro
   position: relative;
   z-index:999;
   color: #fff;
-  margin: 30px auto 0 auto;
+  margin: 0px 0px 0px 0px;
   font-size: 48px;
   font-weight: 700;
 
@@ -333,7 +333,7 @@ Intro
   width: 70%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
+  margin: 0px 0px 0px 0px;
   color: #fff;
 }
 
