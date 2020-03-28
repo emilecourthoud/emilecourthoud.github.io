@@ -199,19 +199,19 @@ Introduction
   }
   
   
-  #introduction .portrait{
-	  position: relative;
-	  position: top -100px;
-	  z-index:999;
-	  width: 300px;
-	  height: 300px;
-	  /*margin: 0px, 0px, 0px, 0px;*/
-	  
-	  border-radius: 50%;
-	  object-fit: cover;
-  }
+#introduction .portrait{
+	position: absolute;
+	position: top 30px;
+	z-index:999;
+	width: 300px;
+	height: 300px;
+	/*margin: 0px, 0px, 0px, 0px;*/
+	
+	border-radius: 50%;
+	object-fit: cover;
+}
 
-  
+
 
 /* ================================
 Home sections
