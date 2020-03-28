@@ -23,7 +23,6 @@ body{
 	font-size: 1.2rem;
 	line-height: 1.8em;
 	max-width: 100%;
-	padding-top: 10%;
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
@@ -132,15 +131,15 @@ Navbar
 ================================= */
 
 nav.navbar{
-    z-index:999;
+    /*z-index:999;*/
     /*overflow: hidden;*/
 	position: fixed;
-	top: 0px;
+	top: 0;
 	margin-bottom: 0px;
 	padding: 10px 0px 10px 0px;
 	width: 100%;
 	border-radius: 0px;
-	transition: all 0.2s;
+	/*transition: all 0.2s;*/
 	background-color: rgba(0, 0, 0, 0.0);
 	transition: background-color 0.5 ease;
 }
