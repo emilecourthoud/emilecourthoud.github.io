@@ -312,7 +312,7 @@ Intro
     margin: 0;
     border-radius: 50%;
 	object-fit: cover;
-	margin: 30px auto 0 auto;
+	margin: 0px auto 0 auto;
 }
 
 #intro h2 {
