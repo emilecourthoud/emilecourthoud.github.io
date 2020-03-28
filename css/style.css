@@ -132,7 +132,7 @@ Navbar
 
 nav.navbar{
     z-index:999;
-    /*overflow: hidden;*/
+    overflow: hidden;
 	position: fixed;
 	top: 0;
 	margin-bottom: 0px;
@@ -168,7 +168,7 @@ nav.navbar.fixed-to-top{
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
 	color: #F9AA33;;
 	background-color: rgba(255, 255, 255, 0.3);
-	border-radius: 5px;
+	border-radius: 10px;
 	cursor: pointer;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
