@@ -155,6 +155,7 @@ nav.navbar.fixed-to-top{
 .navbar-default{
 	border: none;
 	border-bottom: none;
+	/*opacity: 1;*/
 	display: none;
 	z-index: 9999;
 }
@@ -166,6 +167,7 @@ nav.navbar.fixed-to-top{
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
 	color: #fff;
+	background-color: #fff;
 	cursor: pointer;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
