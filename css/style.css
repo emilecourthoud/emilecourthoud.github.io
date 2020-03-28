@@ -155,7 +155,6 @@ nav.navbar.fixed-to-top{
 .navbar-default{
 	border: none;
 	border-bottom: none;
-	opacity: 1;
 	display: none;
 	z-index: 9999;
 }
