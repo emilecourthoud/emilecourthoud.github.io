@@ -261,14 +261,6 @@ Intro
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-#introduction .portrait{
-    width: 300px;
-    height: 300px;
-    margin: 0;
-    border-radius: 50%;
-	object-fit: cover;
-	margin-top: 0px;
-}
 
 #intro .item {
   width: 100%;
@@ -314,11 +306,20 @@ Intro
   text-align: center;
 }
 
+#introduction .portrait{
+    width: 300px;
+    height: 300px;
+    margin: 0;
+    border-radius: 50%;
+	object-fit: cover;
+	margin: 30px auto 0 auto;
+}
+
 #intro h2 {
   position: relative;
   z-index:999;
   color: #fff;
-  margin: 350px auto 0 auto;
+  margin: 30px auto 0 auto;
   font-size: 48px;
   font-weight: 700;
 
