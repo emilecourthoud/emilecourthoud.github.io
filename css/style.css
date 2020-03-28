@@ -322,10 +322,12 @@ Intro
 
 #introduction .portrait{
 	position: relative;
+	position: top 0;
 	z-index:999;
     width: 300px;
     height: 300px;
-    margin: 0px, 0px, 0px, 0px;
+	/*margin: 0px, 0px, 0px, 0px;*/
+	
     border-radius: 50%;
 	object-fit: cover;
 }
@@ -337,7 +339,6 @@ Intro
   margin: 30px auto 0 auto;
   font-size: 48px;
   font-weight: 700;
-
 }
 
 #intro p {
