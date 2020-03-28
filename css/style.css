@@ -257,13 +257,7 @@ Intro
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-#intro .profile{
-    text-align: center;
-    padding: 30px 10px;
-    position: relative;
-}
-
-#intro .portrait{
+#introduction .portrait{
     width: 200px;
     height: 200px;
     margin: 0 auto;
