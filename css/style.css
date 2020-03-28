@@ -150,11 +150,10 @@ nav.navbar{
 
 nav.navbar.fixed-to-top{
 	top: 0px;
+	position: fixed;
 }
 
 .navbar-default{
-	position: fixed;
-	top: 0px;
 	border: none;
 	border-bottom: none;
 	/*opacity: 1;*/
