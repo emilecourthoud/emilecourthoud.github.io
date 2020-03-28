@@ -287,6 +287,7 @@ Intro
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  /*
   -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
@@ -296,6 +297,7 @@ Intro
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
+  */
   bottom: 0;
   top: 0;
   left: 0;
