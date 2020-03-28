@@ -278,6 +278,7 @@ Intro
 }
 */
 
+/*
 #intro .item::before {
   content: '';
   background-color: rgba(0, 0, 0, 0.3);
@@ -289,6 +290,7 @@ Intro
   left: 0;
   bottom: 0;
 }
+*/
 
 /*
 #intro .carousel-container {
