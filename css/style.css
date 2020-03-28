@@ -169,7 +169,7 @@ nav.navbar.fixed-to-top{
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
 	color: #F9AA33;
 	background-color: rgba(255, 255, 255, 0.3);
-	border-radius: 20px;
+	border-radius: 15px;
 	cursor: pointer;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
@@ -198,7 +198,7 @@ Home sections
 
 /* --- heading --- */
 .section-heading {
-	margin-bottom: 50px;
+	margin-bottom: 10px;
 }
 
 .section-heading .heading-line {
@@ -317,6 +317,7 @@ Intro
 }
 
 #intro h2 {
+  position: relative;
   z-index:999;
   color: #fff;
   margin: 30px auto 0 auto;
@@ -326,6 +327,7 @@ Intro
 }
 
 #intro p {
+  position: relative;
   z-index:999;
   width: 70%;
   -webkit-animation-delay: 0.4s;
