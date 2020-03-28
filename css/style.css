@@ -258,11 +258,12 @@ Intro
 }
 
 #introduction .portrait{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     margin: 0 auto;
     border-radius: 50%;
-    object-fit: cover;
+	object-fit: cover;
+	top: 100;
 }
 
 #intro .item {
