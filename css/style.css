@@ -216,8 +216,8 @@ Introduction
 	-ms-flex-align: center;
 	align-items: center;
 	position: absolute;
-	bottom: 0;
-	top: 0;
+	bottom: 50px;
+	top: 50px;
 	left: 0;
 	right: 0;
   }
