@@ -165,11 +165,11 @@
               <p> 
                 Welcome! Here is Emile.<br />
                 I am a mechanical engineer by background, a management consultant by profession, a computer scientist by vocation, a dreamer by nature.<br />
-                I come from Aosta Valley, a lovely spot in the heart of the Italian Alps. I grew up in the mountains, wandering in the woods, building tree houses and playing with fire. Risk and freedom, that's what I loved.<br />
+                I come from Aosta Valley, a lovely spot in the heart of the Italian Alps. I grew up in the mountains, wandering in the woods, building tree houses and playing with fire. Risk and freedom, that is what I loved.<br />
                 Then I discovered the city and opened my eyes. I discovered the people and opened my hearth. I discovered the world and opened my soul.<br />
-                That's all, this is me.<br />
+                That is all, this is me.<br />
                 <br />
-                If you want to call me and run some projects together, contact me via <a href="https://www.linkedin.com/in/emile-courthoud-36a413159/" target="_blank" style="color:#F9AA33" >Linkedin</a>.<br />
+                If you want to carry on projects and collaborations together, contact me via <a href="https://www.linkedin.com/in/emile-courthoud-36a413159/" target="_blank" style="color:#F9AA33" >Linkedin</a>.<br />
                 If you want to know me, drop a message on Telegram / WhatsApp (+490782495566).<br />
                 If you want to meet me, just let me know.<br />
               </p>
@@ -217,6 +217,22 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- js -->
+  <script>
+    $(document).ready(function(){
+      $(window).scroll(function() { // check if scroll event happened
+        if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+          $(".navbar-fixed-top").css("background-color", "#f8f8f8"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+        } else {
+          $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+        }
+      });
+    });
+</script>
+
+
+
+
+
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/wow.min.js"></script>
