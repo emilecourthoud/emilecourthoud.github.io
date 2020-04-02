@@ -368,56 +368,56 @@ Intro
 }
 
 
-#intro .carousel-inner .item,
-#intro .carousel-inner .active.left,
-#intro .carousel-inner .active.right {
+#introduction .carousel-inner .item,
+#inintroductiontro .carousel-inner .active.left,
+#introduction .carousel-inner .active.right {
   opacity: 0;
 }
 
-#intro .carousel-inner .active,
-#intro .carousel-inner .next.left,
-#intro .carousel-inner .prev.right {
+#introduction .carousel-inner .active,
+#introduction .carousel-inner .next.left,
+#introduction .carousel-inner .prev.right {
   opacity: 1;
   transition: 0.9s;
 }
 
-#intro .carousel-inner .next,
-#intro .carousel-inner .prev,
-#intro .carousel-inner .active.left,
-#intro .carousel-inner .active.right {
+#introduction .carousel-inner .next,
+#introduction .carousel-inner .prev,
+#introduction .carousel-inner .active.left,
+#introductionintro .carousel-inner .active.right {
   left: 0;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-/*
-#intro .carousel-control-prev,
-#intro .carousel-control-next {
+
+#introduction .carousel-control-prev,
+#introduction .carousel-control-next {
   color: #fff;
   position: absolute;
   top: calc(50% - 15px);
 }
-*/
 
-#intro .carousel-control-prev {
+
+#introduction .carousel-control-prev {
   left: 20px;
 }
 
-#intro .carousel-control-next {
+#introduction .carousel-control-next {
   right: 20px;
 }
 
-#intro .carousel-control-next-icon,
-#intro .carousel-control-prev-icon {
+#introduction .carousel-control-next-icon,
+#introduction .carousel-control-prev-icon {
   background: none;
   font-size: 48px;
   line-height: 1;
 }
 
-#intro .carousel-indicators {
+#introduction .carousel-indicators {
   cursor: pointer;
 }
 
-#intro .btn-get-started {
+#introduction .btn-get-started {
   z-index:999;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -435,7 +435,7 @@ Intro
   border: 2px solid #F9AA33;
 }
 
-#intro .btn-get-started:hover {
+#introduction .btn-get-started:hover {
   background: #F9AA33;
   color: #fff;
   text-decoration: none;
