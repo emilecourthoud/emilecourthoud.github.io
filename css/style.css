@@ -292,13 +292,7 @@ Introduction
 	text-align: center;
   }
 
-  #introduction .portrait{
-	z-index:999;
-	width: 300px;
-	height: 300px;
-	border-radius: 50%;
-	object-fit: cover;
-}
+  
 
 
 
@@ -324,6 +318,14 @@ Introduction
   bottom: 0;
 }
 
+#introduction .portrait{
+	z-index:999;
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
 
 
 
@@ -342,7 +344,7 @@ Introduction
   width: 70%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  margin: 0 auto 10px auto;
+  margin: 0 auto 5px auto;
   font-size: 24px;
   color: #F9AA33;
 }
