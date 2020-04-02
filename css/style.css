@@ -216,8 +216,8 @@ Introduction
 	-ms-flex-align: center;
 	align-items: center;
 	position: absolute;
-	bottom: 50px;
-	top: 50px;
+	bottom: 0;
+	top: 0;
 	left: 0;
 	right: 0;
   }
@@ -309,18 +309,18 @@ Intro
 }
 */
 
-/*
-#intro .item {
+
+#introduction .item {
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-*/
 
-/*
-#intro .item::before {
+
+
+#introduction .item::before {
   content: '';
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
@@ -331,7 +331,7 @@ Intro
   left: 0;
   bottom: 0;
 }
-*/
+
 
 
 
