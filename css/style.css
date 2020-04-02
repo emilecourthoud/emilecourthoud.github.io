@@ -472,13 +472,13 @@ About
   color: #777;
   font-weight: 300;
   font-size: 1.5rem;
-  line-height: 26px;
+  line-height: 30px;
   font-family: Montserrat,sans-serif;
   text-align: left;
 }
 
 #about .content p {
-  line-height: 26px;
+  line-height: 30px;
   text-align: left;
   font-size: 1.2rem;
   font-family: Montserrat,sans-serif;
