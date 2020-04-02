@@ -333,7 +333,7 @@ Introduction
   position: relative;
   z-index:999;
   color: #fff;
-  margin: 30px auto 0 auto;
+  margin: 10px auto 0 auto;
   font-size: 48px;
   font-weight: 700;
 }
@@ -344,7 +344,7 @@ Introduction
   width: 70%;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  margin: 0 auto 30px auto;
+  margin: 0 auto 10px auto;
   color: #fff;
 }
 
