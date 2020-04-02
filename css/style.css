@@ -425,7 +425,7 @@ Introduction
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #F9AA33;
+  border: 2px solid ç;
 }
 
 #introduction .btn-get-started:hover {
@@ -459,7 +459,7 @@ About
 }
 
 #about .content h2 {
-  color: #f76497;
+  color: #F9AA33;
   font-weight: 300;
   font-size: 2.8rem;
   text-align: left;
