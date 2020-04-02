@@ -43,7 +43,7 @@
 
     var scrollTop = $(window).scrollTop();
 
-    if ($(document).scrollTop() > 100) { // check if user scrolled more than 50 from top of the browser window
+    if ($(document).scrollTop() > 1000) { // check if user scrolled more than 50 from top of the browser window
       $(".navbar-default").css("background-color", "#f8f8f8"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
       $(".navbar-default").css("font", "50px"); 
     }
