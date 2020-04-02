@@ -197,7 +197,7 @@ Introduction
 	width: 100%;
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.3);
-	margin: 50px auto 0px auto;
+	margin: 0px auto 0px auto;
   }
   
   
@@ -297,20 +297,6 @@ Home sections
 }
 
 
-/* ==========================
-Parallax
-============================= */
-
-/*
-#parallax1{
-	background-image: url(../img/parallax/1.jpg);
-}
-#parallax2{
-	background-image: url(../img/parallax/2.jpg);
-}
-*/
-
-
 /* ================================
 Intro
 ================================= */
@@ -347,36 +333,8 @@ Intro
 }
 */
 
-/*
-#intro .carousel-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-*/
-
-/*
-#intro .carousel-content {
-  text-align: center;
-}
-*/
 
 
-/*
 #intro h2 {
   position: relative;
   z-index:999;
@@ -401,7 +359,7 @@ Intro
     font-size: 36px;
   }
 }
-*/
+
 
 /*
 #intro .carousel-inner .item {
