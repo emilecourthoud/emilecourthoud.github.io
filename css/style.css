@@ -335,7 +335,7 @@ Intro
 
 
 
-#intro h2 {
+#introduction h2 {
   position: relative;
   z-index:999;
   color: #fff;
@@ -344,7 +344,7 @@ Intro
   font-weight: 700;
 }
 
-#intro p {
+#introduction p {
   position: relative;
   z-index:999;
   width: 70%;
@@ -355,18 +355,18 @@ Intro
 }
 
 @media (max-width: 768px ) {
-  #intro h2 {
+  #introduction h2 {
     font-size: 36px;
   }
 }
 
 
-/*
-#intro .carousel-inner .item {
+
+#introduction .carousel-inner .item {
   transition-property: opacity;
   background-position: center top;
 }
-*/
+
 
 #intro .carousel-inner .item,
 #intro .carousel-inner .active.left,
