@@ -201,7 +201,34 @@ Introduction
   }
   
   
-#introduction .portrait{
+
+#introduction .carousel-container {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+  }
+  
+  
+  
+  #introduction .carousel-content {
+	text-align: center;
+  }
+
+  #introduction .portrait{
 	z-index:999;
 	width: 300px;
 	height: 300px;
@@ -210,6 +237,7 @@ Introduction
 	border-radius: 50%;
 	object-fit: cover;
 }
+
 
 
 
