@@ -3,7 +3,7 @@ $(document).ready(function(){
       if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
         $(".navbar-fixed-top").css("background-color", "#f8f8f8"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
       } else {
-        $(".navbar-fixed-top").css("background-color", "transparent"); // if not, change it back to transparent
+        $(".navbar-fixed-top").css("background-color", "#000000"); // if not, change it back to transparent
       }
     });
   });
