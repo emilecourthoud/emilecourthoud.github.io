@@ -54,7 +54,7 @@
 
     } else if (scrollTop <= 200) {
       //$('.navbar-default').removeClass('fixed-to-top');
-      $('#navigation').removeClass('show-nav');
+      $('.navbar-default').css('display', 'none');
     }
   });
 
