@@ -77,9 +77,9 @@
   // });
 
 
-  if (location.href != "emilecourthoud.github.io/#about")
+  if (location.href != "https://emilecourthoud.github.io/#about")
   {
-  $('#navigation').removeClass('show-nav');
+    $('.navbar-default').removeClass('fixed-to-top');
   }
 
 
