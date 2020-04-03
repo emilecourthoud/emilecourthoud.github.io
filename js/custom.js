@@ -48,14 +48,13 @@
     //  $(".navbar-default").css("font", "50px"); 
     //}
 
-    if (document.body.scrollTop > 100) {
+    if (document.body.scrollTop > 50) {
       $('.navbar-default').css('display', 'block');
       $('.navbar-default').addClass('fixed-to-top');
 
-    } else if (scrollTop == 0) {
-
-      $('.navbar-default').removeClass('fixed-to-top');
-    }
+    }// else if (scrollTop == 0) {
+    //  $('.navbar-default').removeClass('fixed-to-top');
+    //}
   });
 
   // Intro carousel
