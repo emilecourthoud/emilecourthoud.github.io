@@ -52,7 +52,7 @@
       $('.navbar-default').css('display', 'block');
       $('.navbar-default').addClass('fixed-to-top');
 
-    } else if (scrollTop == 0) {
+    } else if (scrollTop <= 200) {
       $('.navbar-default').removeClass('fixed-to-top');
     }
   });
