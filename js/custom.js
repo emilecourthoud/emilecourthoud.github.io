@@ -48,7 +48,7 @@
     //  $(".navbar-default").css("font", "50px"); 
     //}
 
-    if (scrollTop < 100) {
+    if (scrollTop < -100) {
       $('.navbar-default').css('display', 'block');
       $('.navbar-default').addClass('fixed-to-top');
 
