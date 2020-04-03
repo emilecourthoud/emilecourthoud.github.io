@@ -77,19 +77,11 @@
   // });
 
 
-  //parallax
-  if ($('#parallax1').length || $('#parallax2').length) {
-
-    $(window).stellar({
-      responsive: true,
-      scrollProperty: 'scroll',
-      parallaxElements: false,
-      horizontalScrolling: false,
-      horizontalOffset: 0,
-      verticalOffset: 0
-    });
-
+  if (location.href != "https://emilecourthoud.github.io/#about")
+  {
+  $('#navigation').removeClass('show-nav');
   }
+
 
   function navbar() {
 
