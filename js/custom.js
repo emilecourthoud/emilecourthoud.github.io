@@ -76,10 +76,10 @@
   // });
 
 
-  if (location.href != "https://emilecourthoud.github.io/#about")
-  {
-    $('.navbar-default').removeClass('fixed-to-top');
-  }
+  //if (location.href != "https://emilecourthoud.github.io/#about")
+  //{
+  //  $('.navbar-default').removeClass('fixed-to-top');
+  //}
 
 
   function navbar() {
