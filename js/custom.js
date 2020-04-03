@@ -49,12 +49,12 @@
     //}
 
     if (scrollTop > window.innerHeight) {
-      $('.navbar-default').css('background-color', 'rgba(119, 119, 119, 1.0)');
+      $('.navbar-default').css('background-color', 'rgba(47, 79, 79, 1.0)');
       $('.navbar-default').css('display', 'block');
       $('.navbar-default').addClass('fixed-to-top');
 
     } else if (scrollTop <= window.innerHeight) {
-      $('.navbar-default').css('background-color', 'rgba(119, 119, 119, 0.0)');
+      $('.navbar-default').css('background-color', 'rgba(47, 79, 79, 0.0)');
       $('.navbar-default').css('display', 'block');
       $('.navbar-default').addClass('fixed-to-top');
       //$('.navbar-default').removeClass('fixed-to-top');
