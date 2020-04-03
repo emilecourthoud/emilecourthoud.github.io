@@ -264,8 +264,6 @@ Introduction
 	margin: 0px auto 0px auto;
   }
   
-  
-
 #introduction .carousel-container {
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -291,9 +289,6 @@ Introduction
   #introduction .carousel-content {
 	text-align: center;
   }
-
-  
-
 
 
 #introduction .item {
@@ -439,6 +434,9 @@ Introduction
 /* ================================
 About
 ================================= */
+#introduction {
+	padding: 30px;
+  }
 
 #about .content h2 {
   color: #F9AA33;
