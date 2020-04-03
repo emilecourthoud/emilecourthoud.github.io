@@ -48,11 +48,11 @@
     //  $(".navbar-default").css("font", "50px"); 
     //}
 
-    if (scrollTop > window.screen.height) {
+    if (scrollTop > $.windowHeight()) {
       $('.navbar-default').css('display', 'block');
       $('.navbar-default').addClass('fixed-to-top');
 
-    } else if (scrollTop <= window.screen.height) {
+    } else if (scrollTop <= $.windowHeight()) {
       //$('.navbar-default').removeClass('fixed-to-top');
       $('.navbar-default').css('display', 'none');
     }
