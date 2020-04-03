@@ -48,11 +48,11 @@
     //  $(".navbar-default").css("font", "50px"); 
     //}
 
-    if (scrollTop > 200) {
+    if (scrollTop < 100) {
       $('.navbar-default').css('display', 'block');
       $('.navbar-default').addClass('fixed-to-top');
 
-    } else if (scrollTop == 0) {
+    } else if (scrollTop > 100) {
 
       $('.navbar-default').removeClass('fixed-to-top');
     }
