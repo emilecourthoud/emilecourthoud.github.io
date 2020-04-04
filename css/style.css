@@ -131,7 +131,7 @@ Navbar
 ================================= */
 
 nav.navbar{
-    /*z-index:999;*/
+    z-index:999;
     overflow: hidden;
 	position: fixed;
 	top: 0;
@@ -141,7 +141,8 @@ nav.navbar{
 	border-radius: 0px;
 	transition: all 0.2s;
 	/*background-color: rgba(0, 0, 0, 0.0);*/
-	transition: background-color 0.5 ease;
+	/*transition: background-color 0.5 ease;*/
+	transition: all 300ms ease-in-out;
 }
 
 .navbar-nav{
