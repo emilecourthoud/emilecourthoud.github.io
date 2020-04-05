@@ -161,13 +161,13 @@ nav.navbar.fixed-to-top{
 	/*opacity: 1;*/
 	display: none;
 	z-index: 1000;
-	color: #fff
 }
 
 .navbar-default .navbar-nav>li>a {
 	z-index:1000;
 	font-weight: 300;
 	font-size: 1.5rem;
+	color: #fff
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
