@@ -172,7 +172,7 @@ nav.navbar.fixed-to-top{
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
 	z-index:1000;
 	color: #F9AA33;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: #fff;
 	border-radius: 15px;
 	cursor: pointer;
 	-webkit-transition: all 300ms ease-in-out;
