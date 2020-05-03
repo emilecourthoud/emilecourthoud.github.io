@@ -577,7 +577,7 @@ Horzontal Scroll
 	overflow-y: hidden;
 }
 .card{
-	width: 45px;
+	width: 100px;
 	height: 300px;
 	display: inline-block;
 	background-color: red;
