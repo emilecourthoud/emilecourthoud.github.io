@@ -584,20 +584,27 @@ Horzontal Scroll
 
 .card{
 	display: inline-block;
+	height: 100%;
+	width: 400px;
+
+	background-position: center; /* Center the image */
+	background-image: url('../img/zLake.jpg');
 	background-color: blue;
-	width: 700px;
-	height: 100%;
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+
 }
-/*
-.bounding-cardBox {
-	background-size: contain;
-	position: absolute;
-	background-position: center;
-	background-repeat: no-repeat;
+
+.card-1{
+	display: inline-block;
 	height: 100%;
-	width: 100%;
+	width: 400px;
+
+
+	background-color: red;
+
 }
-*/
+
 
 
 
