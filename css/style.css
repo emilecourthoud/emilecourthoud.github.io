@@ -574,6 +574,10 @@ Horzontal Scroll
 	height: 300px;
 	background-color: gray;
 }
+.card{
+	background-color: red;
+	height: 100%;
+}
 
 /* ================================
 Works
