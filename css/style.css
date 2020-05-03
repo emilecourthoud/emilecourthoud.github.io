@@ -581,10 +581,12 @@ Horzontal Scroll
 	Example: mobile phone? */
 	display: none;
 }
+
 .card{
 	width: 500px;
 	display: inline-block;
-	background-color: red;
+	/*background-color: blue;*/
+	background-image: url('img/zLake.jpg');
 	height: 100%;
 }
 /*
