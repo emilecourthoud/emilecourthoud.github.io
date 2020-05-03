@@ -573,6 +573,8 @@ Horzontal Scroll
 .box {
 	height: 300px;
 	background-color: gray;
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 .card-1{
 	display: inline-block;
