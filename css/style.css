@@ -576,14 +576,10 @@ Horzontal Scroll
 	overflow-x: scroll;
 	overflow-y: hidden;
 }
-.card-1{
+.card{
+	width: 45px;
 	display: inline-block;
 	background-color: red;
-	height: 100%;
-}
-.card-2{
-	display: inline-block;
-	background-color: blue;
 	height: 100%;
 }
 
