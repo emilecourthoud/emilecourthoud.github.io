@@ -571,7 +571,7 @@ Services
 Horzontal Scroll
 ================================= */
 .box-horizontalScroll{
-	height: 300px;
+	height: 500px;
 	background-color: gray;
 	overflow-x: scroll;
 	overflow-y: hidden;
@@ -582,7 +582,7 @@ Horzontal Scroll
 	display: none;
 }
 .card{
-	width: 100px;
+	width: 200px;
 	display: inline-block;
 	background-color: red;
 	height: 100%;
