@@ -567,6 +567,13 @@ Services
 	cursor: pointer;
 }
 
+/* ================================
+Horzontal Scroll
+================================= */
+.box {
+	height: 300px;
+	background-color: gray;
+}
 
 /* ================================
 Works
