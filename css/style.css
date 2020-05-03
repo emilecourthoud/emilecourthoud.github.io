@@ -585,7 +585,7 @@ Horzontal Scroll
 .card{
 	width: 700px;
 	display: inline-block;
-	/*background-color: blue;*/
+	background-color: blue;
 	height: 100%;
 }
 /*
