@@ -583,13 +583,10 @@ Horzontal Scroll
 }
 
 .card{
-	
 	display: inline-block;
-	/*
 	background-color: blue;
 	width: 700px;
 	height: 100%;
-	*/
 }
 /*
 .bounding-cardBox {
