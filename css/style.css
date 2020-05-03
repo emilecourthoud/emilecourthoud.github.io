@@ -582,7 +582,7 @@ Horzontal Scroll
 	display: none;
 }
 .card{
-	width: 200px;
+	width: 500px;
 	display: inline-block;
 	background-color: red;
 	height: 100%;
