@@ -19,15 +19,16 @@ General
 
 body{
 	text-align: center;
-    font-family: Montserrat,sans-serif;;
+    font-family: 'Montserrat',sans-serif;;
 	font-size: 1.2rem;
 	line-height: 1.8em;
 	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	margin-bottom: 20px;
-	font-family: 'Montserrat', sans-serif;;
 }
 
 a {
@@ -58,6 +59,7 @@ button {
 	-o-user-select: none;
 	user-select: none;
 }
+
 button.navbar-toggle {
 	background: #2F4F4F;
 	border: none;
@@ -139,16 +141,12 @@ nav.navbar{
 	padding: 10px 0px 10px 0px;
 	width: 100%;
 	border-radius: 0px;
-	/*transition: all 0.2s;*/
-	/*background-color: rgba(0, 0, 0, 0.0);*/
-	/*transition: background-color 0.5 ease;*/
 	transition: all 300ms ease-in-out;
 }
 
 .navbar-nav{
 	float: left;
 }
-
 
 nav.navbar.fixed-to-top{
 	top: 0px;
@@ -183,14 +181,13 @@ nav.navbar.fixed-to-top{
 	outline: 0;
 }
 
-/* brand / logo */
+/* brand / logo 
 .navbar-default .navbar-brand{
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 2em;
 }
-
 
 .animateIn{
   transform: translateY(0px);
@@ -199,8 +196,7 @@ nav.navbar.fixed-to-top{
 .animateOut{
   transform: translateY(-100%);
 }
-
-
+*/
 
 /* ================================
 Home sections
@@ -257,10 +253,6 @@ Home sections
 	color: #ffffff;
 }
 
-
-/* ================================
-Intro
-================================= */
 
 /* ================================
 Introduction
@@ -330,6 +322,11 @@ Introduction
 	height: 300px;
 	border-radius: 50%;
 	object-fit: cover;
+	user-select: none; /* supported by Chrome and Opera */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 
@@ -445,6 +442,14 @@ Introduction
 /* ================================
 About
 ================================= */
+
+
+#about {
+	width: 100%;
+	padding: 0px;
+	max-width: 100%;
+	padding: 50px 0px 50px 0px;
+}
 
 #about .content h2 {
   color: #F9AA33;
@@ -635,13 +640,6 @@ Horzontal Scroll
 	background-size: cover;
 	background-position: center center;
   }
-
-
-
-
-  
-
-
 
 
 
