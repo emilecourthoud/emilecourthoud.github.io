@@ -570,9 +570,10 @@ Services
 /* ================================
 Horzontal Scroll
 ================================= */
+
 .box-horizontalScroll{
 	height: 400px;
-	background-color: gray;
+	/*background-color: gray;*/
 	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
@@ -610,7 +611,7 @@ Horzontal Scroll
   }
   
   /* Position the front and back side */
-  .flip-box-front, .flip-box-back {
+  .flip-box-front, .flip-box-back{
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -624,18 +625,21 @@ Horzontal Scroll
 	color: black;
   }
   
-  /* Style the back side */
+  /* Style the back side   */
   .flip-box-back {
-	background-color: #141622;
-	color: white;
-	transform: rotateY(180deg);
-
-	width: 100%;
-	height: 100%;
+	color: rgba(255, 255, 255, 1);
 	text-align: center;
+	transform: rotateY(180deg);
+	
+    position: absolute;
 	background-size: cover;
-	/*background-image: url("../img/traveling/Pakistan/000_pakistan_flag.png");*/
+	background-position: center center;
   }
+
+
+
+
+  
 
 
 
