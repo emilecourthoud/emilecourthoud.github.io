@@ -586,10 +586,18 @@ Horzontal Scroll
 	display: inline-block;
 	background-color: red;
 	height: 100%;
+}
 
-	min-height: 100%;
+.bounding-cardBox {
+	background-size: contain;
+	position: absolute;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
 	width: 100%;
 }
+
+
 
 /* ================================
 Works
