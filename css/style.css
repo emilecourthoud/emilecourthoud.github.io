@@ -570,11 +570,16 @@ Services
 /* ================================
 Horzontal Scroll
 ================================= */
-.box {
+.box-horizontalScroll{
 	height: 300px;
 	background-color: gray;
 	overflow-x: scroll;
 	overflow-y: hidden;
+}
+.box-horizontalScroll::-webkit-scrollbar {
+	/* Disabling the horizontal scroll bar fro webkit websites
+	Example: mobile phone? */
+	display: none;
 }
 .card{
 	width: 100px;
