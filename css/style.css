@@ -575,10 +575,12 @@ Horzontal Scroll
 	background-color: gray;
 }
 .card-1{
+	display: inline-block;
 	background-color: red;
 	height: 100%;
 }
 .card-2{
+	display: inline-block;
 	background-color: blue;
 	height: 100%;
 }
