@@ -22,3 +22,7 @@ else
 fi
 
 git push -u origin master
+
+
+#To see the preview:
+#php -S localhost:8000
