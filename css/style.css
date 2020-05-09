@@ -441,9 +441,19 @@ Introduction
 }
 
 /* ================================
+Particles
+================================= */
+#particles-js{
+    position: absolute;
+    background: #141622;
+    width: 100vw;
+    height: 100vh;
+    z-index:0;
+}
+
+/* ================================
 About
 ================================= */
-
 
 #about {
 	width: 100%;
