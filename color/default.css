@@ -3,6 +3,12 @@ a, a:hover {
 }
 
 
+/* ==== FONT ==== */
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+  color: #fff;
+}
+
+
 /* Back to top button */
 .back-to-top {
   background: #272935;
