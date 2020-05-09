@@ -27,12 +27,13 @@ General
 
 body{
     font-family: 'Montserrat',sans-serif;;
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	line-height: 1.8em;
 	max-width: 100%;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	text-align: left;
+	color:var(--color_main);
 }
 
 /* ==== FONT ==== */
@@ -47,24 +48,15 @@ h2 {
 }
   
 h3 {
-font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
-
-/* main text */
-p {
-	line-height: 35px;
-	font-size: 1.2rem;
-	font-family: Montserrat,sans-serif;
-	color:var(--color_main);
-}
 
 /* links */
 a {
 	position:relative;
 	color:var(--color_highligh);
 }
-
 
 
 
