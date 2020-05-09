@@ -18,7 +18,7 @@ General
 ================================= */
 
 :root {
-    --main-color:#06c;
+    --main-color:#06c;/*#F9AA33*/
 }
 
 
@@ -36,20 +36,44 @@ body{
 /* ==== FONT ==== */
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 	margin-bottom: 20px;
-	color: #F9AA33;
+	color:var(--main-color);
 }
 
-a {
-    position:relative;
-}
 
 a, a:hover {
+	position:relative;
 	color:#F9AA33;
   }
+
+
+
+#h2 {
+	color: #F9AA33;
+	font-weight: 300;
+	font-size: 2.8rem;
+	text-align: left;
+	font-family: Montserrat,sans-serif;
+  }
   
-p {
-color: #fff;
-}
+  #h3 {
+	color: var(--main-color);
+	font-weight: 300;
+	font-size: 1.5rem;
+	line-height: 35px;
+	font-family: Montserrat,sans-serif;
+	text-align: left;
+  }
+  
+  #p {
+	line-height: 35px;
+	text-align: left;
+	font-size: 1.2rem;
+	font-family: Montserrat,sans-serif;
+	color: #fff;
+  }
+
+
+
 
 
 .lead{
@@ -75,15 +99,6 @@ button {
 	-o-user-select: none;
 	user-select: none;
 }
-
-button.navbar-toggle {
-	border: none;
-}
-
-.btn-theme:hover{
-	background: transparent !important;
-}
-
 
 /* ================================
 margin, padding
@@ -126,13 +141,6 @@ margin, padding
   background: #F9AA33;
   color: #fff;
   text-decoration: none;
-}
-
-
-@media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
-  }
 }
 
 
@@ -189,22 +197,6 @@ nav.navbar.fixed-to-top{
 	outline: 0;
 }
 
-/* brand / logo 
-.navbar-default .navbar-brand{
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 2em;
-}
-
-.animateIn{
-  transform: translateY(0px);
-}
-
-.animateOut{
-  transform: translateY(-100%);
-}
-*/
 
 /* ================================
 Home sections
@@ -215,27 +207,6 @@ Home sections
 	padding: 10px 0px 10px 0px;
 }
 
-/* --- heading --- */
-/*
-.section-heading {
-	margin-bottom: 100px;
-}
-*/
-
-/*
-.section-heading .heading-line {
-	margin:0 auto;
-	display: block;
-	height: 1px;
-	width: 80px;
-	background: #2F4F4F;
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
-*/
-
-
-/* --- section bg var --- */
 
 .bg-white {
 	background: #fff;
@@ -249,17 +220,6 @@ Home sections
 	background: #141622;
 }
 
-
-/* --- section content general color --- */
-
-.color-light h1,.color-light h2,.color-light h3,.color-light h4,.color-light h5,.color-light h6 {
-	color: #ffffff;
-}
-
-
-.color-light p {
-	color: #ffffff;
-}
 
 
 /* ================================
@@ -462,124 +422,18 @@ About
 	padding: 50px 0px 50px 0px;
 }
 
-#about .content h2 {
-  color: #F9AA33;
-  font-weight: 300;
-  font-size: 2.8rem;
-  text-align: left;
-  font-family: Montserrat,sans-serif;
-}
-
-#about .content h3 {
-  color: #777;
-  font-weight: 300;
-  font-size: 1.5rem;
-  line-height: 35px;
-  font-family: Montserrat,sans-serif;
-  text-align: left;
-}
-
-#about .content p {
-  line-height: 35px;
-  text-align: left;
-  font-size: 1.2rem;
-  font-family: Montserrat,sans-serif;
-}
-
-#about .content p:last-child {
-  margin-bottom: 0;
-}
-
-#about .bio-title{
-    display: block;
-    text-align:center;
-}
-
-#about .bio-title h3 {
-    font-size:1.7rem;
-    color:#fff;
-    font-weight:300
-}
-
-#about .bio-title h2 {
-    font-size:2.7rem;
-    color:#fff;
-    font-weight:300
-}
-
-
-#profile{
-    text-align: center;
-    padding: 30px 10px;
-    position: relative;
-}
 
 /* ================================
-Team
+Footer
 ================================= */
-.box-team img {
-	margin-bottom: 30px;
+footer {
+	background: #232F34;
+	color: #fff;
+	padding: 30px 0 20px;
 }
 
 
 
-/* ================================
-Services
-================================= */
-.service.carousel h4,.service.carousel p {
-	text-align: left;
-}
-
-
-.service .carousel-control{
-	background: none;
-}
-
-.service .screenshot{
-	overflow: hidden;
-	overflow: hidden;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.service .screenshot img{
-	margin-right: auto;
-	margin-left: auto;
-	padding-left: 4px;
-	width: 400px;
-}
-
-.service .carousel-indicators {
-	position: relative;
-	bottom: 0;
-	left: 0;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding: 5px;
-	padding-bottom: 8px;
-	width: 100%;
-	background: #ffffff;
-}
-
-.service .carousel-indicators .active {
-	width: 45px;
-	height: 5px;
-	border: none;
-	border-radius: 0px;
-}
-
-.service .carousel-indicators li {
-	display: inline-block;
-	margin: 1px;
-	width: 45px;
-	height: 5px;
-	border: none;
-	border-radius: 0px;
-	background: #eeeeee;
-	text-indent: -999px;
-	cursor: pointer;
-}
 
 /* ================================
 Horzontal Scroll
@@ -657,12 +511,3 @@ Horzontal Scroll
 	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4));
   }
 
-
-/* ================================
-Footer
-================================= */
-footer {
-	background: #232F34;
-	color: #fff;
-	padding: 30px 0 20px;
-}
