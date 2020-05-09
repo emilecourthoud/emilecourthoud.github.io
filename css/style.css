@@ -260,10 +260,9 @@ Introduction
 ================================= */
 
 #introduction {
-	/*position: fixed;*/
-	/*position: relative 100px;*/
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
+	max-width: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
 	margin: 0px auto 0px auto;
   }
@@ -303,18 +302,13 @@ Introduction
   background-repeat: no-repeat;
 }
 
-
-
 #introduction .item::before {
   content: '';
   background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   height: 100%;
   width: 100%;
-  top: 10px;
-  right: 0;
-  left: 0;
-  bottom: 10px;
+  margin: 10px auto 10px auto;
 }
 
 #introduction .portrait{
@@ -331,8 +325,6 @@ Introduction
 }
 
 
-
-
 #introduction h2 {
   position: relative;
   z-index:999;
@@ -345,12 +337,14 @@ Introduction
 #introduction p {
   position: relative;
   z-index:999;
-  width: 70%;
+  color: #fff;
+  font-weight: 200;
+  font-size: 24px;
+  width: 50vw;
+  max-width: 100%;
+  margin: 0 auto 30px auto;
   -webkit-animation-delay: 0.4s;
   animation-delay: 0.4s;
-  margin: 0 auto 5px auto;
-  font-size: 24px;
-  color: #F9AA33;
 }
 
 @media (max-width: 768px ) {
@@ -418,20 +412,19 @@ Introduction
 
 #introduction .btn-get-started {
   z-index:999;
-  font-family: "Montserrat", sans-serif;
+  
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  /*padding: 12px 32px;*/
   border-radius: 3px;
   transition: 0.5s;
   line-height: 1;
-  /*margin: 10px;*/
+  padding: 12px 32px;
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid ç;
+  border: 2px solid #F9AA33;;
 }
 
 #introduction .btn-get-started:hover {
