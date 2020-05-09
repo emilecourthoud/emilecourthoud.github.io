@@ -1,3 +1,6 @@
+###### #To see website preview, type in the terminal <php -S localhost:8000> from the directory in which the folder public is stored
+
+## Description of update.sh
 #HOW to run this file: type <./update.sh> on the command line from the folder where update.sh bash file is saved
 #WHY? It simplifies the git add / commit / push procedure
 
@@ -24,5 +27,3 @@ fi
 git push -u origin master
 
 
-#To see the preview:
-#php -S localhost:8000
