@@ -21,6 +21,7 @@ General
 	--color_main:#fff;
 	--color_background:#141622;
 	--color_highligh:#F9AA33;
+	--color_bar:#232F34;
 }
 
 
@@ -44,20 +45,18 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 h2 {
-	font-size: 2.8rem;
+	font-size: 3.2rem;
 }
   
 h3 {
-	font-size: 1.5rem;
+	font-size: 2.2rem;
 }
-
 
 /* links */
 a {
 	position:relative;
 	color:var(--color_highligh);
 }
-
 
 
 
@@ -183,16 +182,6 @@ nav.navbar.fixed-to-top{
 }
 
 
-/* ================================
-Home sections
-================================= */
-
-.home-section {
-	width: 100%;
-	padding: 10px 0px 10px 0px;
-	background:var(--color_background);
-}
-
 
 
 /* ================================
@@ -203,8 +192,8 @@ Introduction
 	width: 100vw;
 	height: 100vh;
 	max-width: 100%;
-	background-color: rgba(0, 0, 0, 0.3);
 	margin: 0px auto 0px auto;
+	text-align: center;
   }
   
 #introduction .carousel-container {
@@ -227,12 +216,6 @@ Introduction
 	right: 0;
   }
   
-  
-  
-  #introduction .carousel-content {
-	text-align: center;
-  }
-
 
 #introduction .item {
   width: 100%;
@@ -244,7 +227,6 @@ Introduction
 
 #introduction .item::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -292,8 +274,6 @@ Introduction
     font-size: 36px;
   }
 }
-
-
 
 #introduction .carousel-inner .item {
   transition-property: opacity;
@@ -378,7 +358,7 @@ Particles
 ================================= */
 #particles-js{
     position: absolute;
-    background: #141622;
+    background:var(--color_background);
     width: 100vw;
     height: 100vh;
     z-index:0;
@@ -393,6 +373,8 @@ About
 	padding: 0px;
 	max-width: 100%;
 	padding: 50px 0px 50px 0px;
+	background:var(--color_background);
+	text-align: left;
 }
 
 
@@ -400,7 +382,7 @@ About
 Footer
 ================================= */
 footer {
-	background: #232F34;
+	background:var(--color_bar);
 	color: #fff;
 	padding: 30px 0 20px;
 }
