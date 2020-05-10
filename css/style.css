@@ -370,14 +370,62 @@ Horzontal Scroll
 ================================= */
 
 .box-horizontalScroll{
+	
 	height: 400px;
-	/*background-color: gray;*/
-	overflow-x: scroll;
+	overflow-x: auto;
 	overflow-y: hidden;
 	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+	
 }
 
 
+.menu-wrapper {
+	margin: 10px 30px 10px 30px;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.menu {
+	margin-right: 0;
+	margin-left: 0;
+	height: 400px;
+	white-space: nowrap;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+}
+
+.paddles {
+
+}
+.paddle {
+	margin: 10px 10px 20px 10px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 5em;
+	background-color: rgba(0,0,0,0.4)
+}
+.left-paddle {
+	
+	color:var(--color_highligh);
+	left: 0;
+}
+.right-paddle {
+	color:var(--color_highligh);
+	right: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.print {
+	margin: auto;
+	max-width: 500px;
+}
 
 
 
