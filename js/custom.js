@@ -192,8 +192,7 @@
 // ###### Paddles ##########
 // #########################
 
-// duration of scroll animation
-var scrollDuration = 10;
+
 
 // paddles
 var leftPaddle = document.getElementsByClassName('left-paddle');
@@ -201,12 +200,15 @@ var rightPaddle = document.getElementsByClassName('right-paddle');
 // get items dimensions
 
 var flipBox = document.getElementsByClassName('flip-box');
+var itemSize = $('.flip-box').outerWidth(true);
+// duration of scroll animation
+var scrollDuration = 1.25*itemSize;
+// get some relevant size for the paddle triggering point
+var paddleMargin = 0.5*itemSize;
+
 
 
 var itemsLength = 12
-var itemSize = $('.flip-box').outerWidth(true);
-// get some relevant size for the paddle triggering point
-var paddleMargin = itemsLength;
 
 // get wrapper width
 var getMenuWrapperSize = function() {
@@ -261,8 +263,8 @@ $('.menu').on('scroll', function() {
 	$('#print-wrapper-size span').text(menuWrapperSize);
 	$('#print-menu-size span').text(menuSize);
 	$('#print-menu-invisible-size span').text(menuInvisibleSize);
-	$('#print-menu-position span').text(menuPosition);
-
+  $('#print-menu-position span').text(menuPosition);
+  
 });
 
 
@@ -270,12 +272,12 @@ $('.menu').on('scroll', function() {
 $(rightPaddle).on('click', function() {
   var itemSize = $('.flip-box').outerWidth(true);
   event.preventDefault();
-  $('.menu').animate({scrollLeft:'+='+itemSize},1000);
+  $('.menu').animate({scrollLeft:'+='+itemSize},scrollDuration);
 });
 
 // scroll to right
 $(leftPaddle).on('click', function() {
   var itemSize = $('.flip-box').outerWidth(true);
   event.preventDefault();
-  $('.menu').animate({scrollLeft:'-='+itemSize},1000);
+  $('.menu').animate({scrollLeft:'-='+itemSize},scrollDuration);
 });
