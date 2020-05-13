@@ -157,7 +157,6 @@ function myStopFunction() {
   new WOW().init();
   */
 
-})(jQuery);
 
 
 
@@ -170,90 +169,141 @@ function myStopFunction() {
 
 
 
-// paddles
-var leftPaddle = document.getElementsByClassName('left-paddle');
-var rightPaddle = document.getElementsByClassName('right-paddle');
-// get items dimensions
+  // paddles
+  var leftPaddle = document.getElementsByClassName('left-paddle');
+  var rightPaddle = document.getElementsByClassName('right-paddle');
+  var menuImages = document.getElementsByClassName('menu');
+  // get items dimensions
 
-var flipBox = document.getElementsByClassName('flip-box');
-var itemSize = $('.flip-box').outerWidth(true);
-// duration of scroll animation
-var scrollDuration = 1.25*itemSize;
-// get some relevant size for the paddle triggering point
-var paddleMargin = 0.5*itemSize;
+  var flipBox = document.getElementsByClassName('flip-box');
+  var itemSize = $('.flip-box').outerWidth(true);
+  // duration of scroll animation
+  var scrollDuration = 1.25*itemSize;
+  // get some relevant size for the paddle triggering point
+  var paddleMargin = 0.5*itemSize;
 
 
 
-var itemsLength = 12
+  var itemsLength = 12
 
-// get wrapper width
-var getMenuWrapperSize = function() {
-	return $('.menu-wrapper').outerWidth();
-}
-var menuWrapperSize = getMenuWrapperSize();
-// the wrapper is responsive
-$(window).on('resize', function() {
-	menuWrapperSize = getMenuWrapperSize();
-});
-// size of the visible part of the menu is equal as the wrapper size 
-var menuVisibleSize = menuWrapperSize;
+  // get wrapper width
+  var getMenuWrapperSize = function() {
+    return $('.menu-wrapper').outerWidth();
+  }
+  var menuWrapperSize = getMenuWrapperSize();
+  // the wrapper is responsive
+  $(window).on('resize', function() {
+    menuWrapperSize = getMenuWrapperSize();
+  });
+  // size of the visible part of the menu is equal as the wrapper size 
+  var menuVisibleSize = menuWrapperSize;
 
-// get total width of all menu items
-var getMenuSize = function() {
-	return itemsLength * itemSize;
-};
-var menuSize = getMenuSize();
-// get how much of menu is invisible
-var menuInvisibleSize = menuSize - menuWrapperSize;
+  // get total width of all menu items
+  var getMenuSize = function() {
+    return itemsLength * itemSize;
+  };
+  var menuSize = getMenuSize();
+  // get how much of menu is invisible
+  var menuInvisibleSize = menuSize - menuWrapperSize;
 
-// get how much have we scrolled to the left
-var getMenuPosition = function() {
-	return $('.menu').scrollLeft();
-};
+  // get how much have we scrolled to the left
+  var getMenuPosition = function() {
+    return $(menuImages).scrollLeft();
+  };
 
-// finally, what happens when we are actually scrolling the menu
-$('.menu').on('scroll', function() {
+  // finally, what happens when we are actually scrolling the menu
+  $(menuImages).on('scroll', function() {
 
-	// get how much of menu is invisible
-	menuInvisibleSize = menuSize - menuWrapperSize;
-	// get how much have we scrolled so far
-	var menuPosition = getMenuPosition();
+    // get how much of menu is invisible
+    menuInvisibleSize = menuSize - menuWrapperSize;
+    // get how much have we scrolled so far
+    var menuPosition = getMenuPosition();
 
-	var menuEndOffset = menuInvisibleSize - paddleMargin;
+    var menuEndOffset = menuInvisibleSize - paddleMargin;
 
-	// show & hide the paddles 
-	// depending on scroll position
-	if (menuPosition <= paddleMargin) {
-		$(leftPaddle).addClass('hidden');
-		$(rightPaddle).removeClass('hidden');
-	} else if (menuPosition < menuEndOffset) {
-		// show both paddles in the middle
-		$(leftPaddle).removeClass('hidden');
-		$(rightPaddle).removeClass('hidden');
-	} else if (menuPosition >= menuEndOffset) {
-		$(leftPaddle).removeClass('hidden');
-		$(rightPaddle).addClass('hidden');
-}
+    // show & hide the paddles 
+    // depending on scroll position
+    if (menuPosition <= paddleMargin) {
+      $(leftPaddle).addClass('hidden');
+      $(rightPaddle).removeClass('hidden');
+    } else if (menuPosition < menuEndOffset) {
+      // show both paddles in the middle
+      $(leftPaddle).removeClass('hidden');
+      $(rightPaddle).removeClass('hidden');
+    } else if (menuPosition >= menuEndOffset) {
+      $(leftPaddle).removeClass('hidden');
+      $(rightPaddle).addClass('hidden');
+  }
 
-	// print important values
-	$('#print-wrapper-size span').text(menuWrapperSize);
-	$('#print-menu-size span').text(menuSize);
-	$('#print-menu-invisible-size span').text(menuInvisibleSize);
-  $('#print-menu-position span').text(menuPosition);
+    // print important values
+    $('#print-wrapper-size span').text(menuWrapperSize);
+    $('#print-menu-size span').text(menuSize);
+    $('#print-menu-invisible-size span').text(menuInvisibleSize);
+    $('#print-menu-position span').text(menuPosition);
+    
+  });
+
+  // update the variables
+  var getMenuWrapperSize = function() {
+    return $('.menu-wrapper').outerWidth();
+  }
+
+
+  $(document.getElementsByClassName('right_VDA')).on('click', function() {
+    scrollToLeft(document.getElementsByClassName('menu_VDA'));});
+  $(document.getElementsByClassName('left_VDA')).on('click', function() {
+    scrollToRight(document.getElementsByClassName('menu_VDA'));});
+
+  $(document.getElementsByClassName('right_CH')).on('click', function() {
+    scrollToLeft(document.getElementsByClassName('menu_CH'));});
+  $(document.getElementsByClassName('left_CH')).on('click', function() {
+    scrollToRight(document.getElementsByClassName('menu_CH'));});
+
+  $(document.getElementsByClassName('right_PK')).on('click', function() {
+    scrollToLeft(document.getElementsByClassName('menu_PK'));});
+  $(document.getElementsByClassName('left_PK')).on('click', function() {
+    scrollToRight(document.getElementsByClassName('menu_PK'));});
   
-});
+  $(document.getElementsByClassName('right_DE')).on('click', function() {
+    scrollToLeft(document.getElementsByClassName('menu_DE'));});
+  $(document.getElementsByClassName('left_DE')).on('click', function() {
+    scrollToRight(document.getElementsByClassName('menu_DE'));});
+
+  $(document.getElementsByClassName('right_IT')).on('click', function() {
+    scrollToLeft(document.getElementsByClassName('menu_IT'));});
+  $(document.getElementsByClassName('left_IT')).on('click', function() {
+    scrollToRight(document.getElementsByClassName('menu_IT'));}); 
 
 
-// scroll to left
-$(rightPaddle).on('click', function() {
-  var itemSize = $('.flip-box').outerWidth(true);
-  event.preventDefault();
-  $('.menu').animate({scrollLeft:'+='+itemSize},scrollDuration);
-});
 
-// scroll to right
-$(leftPaddle).on('click', function() {
-  var itemSize = $('.flip-box').outerWidth(true);
-  event.preventDefault();
-  $('.menu').animate({scrollLeft:'-='+itemSize},scrollDuration);
-});
+  // scroll to left
+  var scrollToLeft = function(menuImg) {
+    var itemSize = $('.flip-box').outerWidth(true);
+    event.preventDefault();
+    $(menuImg).animate({scrollLeft:'+='+itemSize},scrollDuration);
+  };
+
+  // scroll to right
+  var scrollToRight = function(menuImg) {
+    var itemSize = $('.flip-box').outerWidth(true);
+    event.preventDefault();
+    $(menuImg).animate({scrollLeft:'-='+itemSize},scrollDuration);
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+})(jQuery);
