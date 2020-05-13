@@ -1,5 +1,4 @@
 (function ($) {
-
   // Back to top button
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
@@ -39,7 +38,7 @@
   });
 
 
-
+/*
 //Navigation bar
   (() => {
     'use strict';
@@ -59,21 +58,16 @@
           bannerWrapper.classList.remove('animateOut');
           bannerWrapper.classList.add('animateIn');
         }
-        //banner.style.background = 'rgba(162, 197, 35, 0.6)';
+        banner.style.background = 'rgba(162, 197, 35, 0.6)';
         refOffset = newOffset;
       } else {
-        //banner.style.backgroundColor = 'rgba(162, 197, 35, 1)';
+        banner.style.backgroundColor = 'rgba(162, 197, 35, 1)';
       }
     };
   
     window.addEventListener('scroll', handler, false);
   })();
-
-
-
-
-
-
+*/
 
 
 
@@ -83,55 +77,47 @@
 
   // Fixed navbar
   $(window).scroll(function () {
-
     var scrollTop = $(window).scrollTop();
-
-    //if ($(document).scrollTop() > 500) { // check if user scrolled more than 50 from top of the browser window
-    //  $(".navbar-default").css("background-color", "#f8f8f8"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-    //  $(".navbar-default").css("font", "50px"); 
-    //}
-
-    if (scrollTop > window.innerHeight) {
-      $('.navbar-default').css('background-color', 'rgba(47, 79, 79, 1.0)');
+    var heightChange = 0; //  window.innerHeigh
+    //if (scrollTop > window.innerHeight) {
+    if (scrollTop > heightChange) {
+      //$('.navbar-default').css('background-color', 'rgba(47, 79, 79, 1.0)');
       $('.navbar-default').css('display', 'block');
       $('.navbar-default').addClass('fixed-to-top');
 
-    } else if (scrollTop <= window.innerHeight) {
-      $('.navbar-default').css('background-color', 'rgba(47, 79, 79, 0.0)');
+    } else if (scrollTop <= heightChange) {
+      //$('.navbar-default').css('background-color', 'rgba(47, 79, 79, 0.0)');
       $('.navbar-default').css('display', 'block');
       $('.navbar-default').addClass('fixed-to-top');
-      //$('.navbar-default').removeClass('fixed-to-top');
-      //$('.navbar-default').css('display', 'none');
     }
   });
 
-  // Intro carousel
-  var introCarousel = $("#introCarousel");
-  var introCarouselIndicators = $("#intro-carousel-indicators");
-  introCarousel.find(".carousel-inner").children(".item").each(function(index) {
-    (index === 0) ?
-    introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "' class='active'></li>") :
-    introCarouselIndicators.append("<li data-target='#introCarousel' data-slide-to='" + index + "'></li>");
-
-    $(this).css("background-image", "url('" + $(this).children('.carousel-background').children('img').attr('src') +"')");
-    $(this).children('.carousel-background').remove();
-  });
-
-  // introCarousel.on('slid.bs.carousel', function (e) {
-  //   $(this).find('h2').addClass('animated fadeInDown');
-  //   $(this).find('p').addClass('animated fadeInUp');
-  //   $(this).find('.btn-get-started').addClass('animated fadeInUp');
-  // });
 
 
-  //if (location.href != "https://emilecourthoud.github.io/#about")
-  //{
-  //  $('.navbar-default').removeClass('fixed-to-top');
-  //}
+$("nav").hide();
+
+$("html").mousemove(function( event ) {
+    $("nav").show();
+
+    myStopFunction();
+    myFunction();
+});
+
+function myFunction() {
+    myVar = setTimeout(function(){
+        $("nav").hide();
+    }, 2000);
+}
+function myStopFunction() {
+    if(typeof myVar != 'undefined'){
+        clearTimeout(myVar);
+    }
+}
+
+
 
 
   function navbar() {
-
     if ($(window).scrollTop() > 1) {
       $('#navigation').addClass('show-nav');
     } else {
