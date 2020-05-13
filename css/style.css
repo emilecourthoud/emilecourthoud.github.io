@@ -114,7 +114,7 @@ margin, padding
 .back-to-top {
   position: fixed;
   display: block;
-  padding: 6px 12px 9px 12px;
+  padding: 6px 12px 6px 12px;
   font-size: 16px;
   border-radius: 2px;
   right: 15px;
@@ -327,7 +327,7 @@ Introduction
   color: var(--color_main);
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #F9AA33;;
+  border: 2px solid var(--color_highligh);
 }
 
 #introduction .btn-get-started:hover {
@@ -456,7 +456,7 @@ Horzontal Scroll
 	height: 100%;
 	width: 500px;
 	background-color: transparent;
-	border: 1px solid #f1f1f1;
+	border: 1px solid var(--color_main);
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   

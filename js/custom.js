@@ -71,10 +71,7 @@
 
 
 
-
-
-
-
+/*
   // Fixed navbar
   $(window).scroll(function () {
     var scrollTop = $(window).scrollTop();
@@ -91,13 +88,14 @@
       $('.navbar-default').addClass('fixed-to-top');
     }
   });
+  */
 
 
-
-$("nav").hide();
+//$("nav").hide();
+$("nav").fadeOut('slow');
 
 $("html").mousemove(function( event ) {
-    $("nav").show();
+  $("nav").show();
 
     myStopFunction();
     myFunction();
@@ -105,8 +103,9 @@ $("html").mousemove(function( event ) {
 
 function myFunction() {
     myVar = setTimeout(function(){
-        $("nav").hide();
-    }, 2000);
+       $("nav").fadeOut(1500);
+      //$("nav").hide();
+    }, 1500);
 }
 function myStopFunction() {
     if(typeof myVar != 'undefined'){
@@ -116,7 +115,7 @@ function myStopFunction() {
 
 
 
-
+/*
   function navbar() {
     if ($(window).scrollTop() > 1) {
       $('#navigation').addClass('show-nav');
@@ -125,20 +124,15 @@ function myStopFunction() {
     }
 
   }
-
   $(document).ready(function () {
-
     var browserWidth = $(window).width();
-
     if (browserWidth > 560) {
-
       $(window).scroll(function () {
         navbar();
       });
     }
-
   });
-
+*/
 
   $(window).resize(function () {
 
