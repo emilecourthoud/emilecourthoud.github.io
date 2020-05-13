@@ -132,19 +132,14 @@ function myStopFunction() {
       });
     }
   });
-*/
 
   $(window).resize(function () {
-
     var browserWidth = $(window).width();
-
     if (browserWidth > 560) {
-
       $(window).scroll(function () {
         navbar();
       });
     }
-
   });
 
 
@@ -160,6 +155,7 @@ function myStopFunction() {
 
   //animation
   new WOW().init();
+  */
 
 })(jQuery);
 
