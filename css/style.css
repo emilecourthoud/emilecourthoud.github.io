@@ -237,8 +237,8 @@ Introduction
 
 #introduction h2 {
   position: relative;
-  z-index:999;
-  color: #fff;
+  z-index: 999;
+  color: var(--color_main);
   margin: 10px auto 0 auto;
   font-size: 48px;
   font-weight: 700;
@@ -246,7 +246,7 @@ Introduction
 
 #introduction p {
   position: relative;
-  color: #fff;
+  color: var(--color_main);
   font-weight: 200;
   font-size: 24px;
   width: 50vw;
@@ -288,7 +288,7 @@ Introduction
 
 #introduction .carousel-control-prev,
 #introduction .carousel-control-next {
-  color: #fff;
+  color: var(--color_main);
   position: absolute;
   top: calc(50% - 15px);
 }
@@ -324,15 +324,15 @@ Introduction
   transition: 0.5s;
   line-height: 1;
   padding: 12px 32px;
-  color: #fff;
+  color: var(--color_main);
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   border: 2px solid #F9AA33;;
 }
 
 #introduction .btn-get-started:hover {
-  background: #F9AA33;
-  color: #fff;
+  background: var(--color_highligh);
+  color: var(--color_main);
   text-decoration: none;
 }
 
