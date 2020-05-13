@@ -250,44 +250,49 @@ function myStopFunction() {
 
 
   $(document.getElementsByClassName('right_VDA')).on('click', function() {
-    scrollToLeft(document.getElementsByClassName('menu_VDA'));});
-  $(document.getElementsByClassName('left_VDA')).on('click', function() {
-    scrollToRight(document.getElementsByClassName('menu_VDA'));});
+    updateMenuCountry('VDA');scrollToLeft();});
+  $(document.getElementsByClassName('left_VDA')).on('click', function() { 
+    updateMenuCountry('VDA');scrollToRight();});
 
   $(document.getElementsByClassName('right_CH')).on('click', function() {
-    scrollToLeft(document.getElementsByClassName('menu_CH'));});
+    updateMenuCountry('CH');scrollToLeft();});
   $(document.getElementsByClassName('left_CH')).on('click', function() {
-    scrollToRight(document.getElementsByClassName('menu_CH'));});
+    updateMenuCountry('CH');scrollToRight();});
 
   $(document.getElementsByClassName('right_PK')).on('click', function() {
-    scrollToLeft(document.getElementsByClassName('menu_PK'));});
+    updateMenuCountry('PK');scrollToLeft();});
   $(document.getElementsByClassName('left_PK')).on('click', function() {
-    scrollToRight(document.getElementsByClassName('menu_PK'));});
-  
+    updateMenuCountry('PK');scrollToRight();});
+
   $(document.getElementsByClassName('right_DE')).on('click', function() {
-    scrollToLeft(document.getElementsByClassName('menu_DE'));});
+    updateMenuCountry('DE');scrollToLeft();});
   $(document.getElementsByClassName('left_DE')).on('click', function() {
-    scrollToRight(document.getElementsByClassName('menu_DE'));});
+    updateMenuCountry('DE');scrollToRight();});
 
   $(document.getElementsByClassName('right_IT')).on('click', function() {
-    scrollToLeft(document.getElementsByClassName('menu_IT'));});
+    updateMenuCountry('IT');scrollToLeft();});
   $(document.getElementsByClassName('left_IT')).on('click', function() {
-    scrollToRight(document.getElementsByClassName('menu_IT'));}); 
+    updateMenuCountry('IT');scrollToRight();});
 
 
+  var updateMenuCountry = function(countryName) {
+    rightPaddle = document.getElementsByClassName('right_'.concat(countryName));
+    leftPaddle  = document.getElementsByClassName('left_'.concat(countryName));
+    menuImages = document.getElementsByClassName('menu_'.concat(countryName));
+  }
 
   // scroll to left
-  var scrollToLeft = function(menuImg) {
+  var scrollToLeft = function() {
     var itemSize = $('.flip-box').outerWidth(true);
     event.preventDefault();
-    $(menuImg).animate({scrollLeft:'+='+itemSize},scrollDuration);
+    $(menuImages).animate({scrollLeft:'+='+itemSize},scrollDuration);
   };
 
   // scroll to right
-  var scrollToRight = function(menuImg) {
+  var scrollToRight = function() {
     var itemSize = $('.flip-box').outerWidth(true);
     event.preventDefault();
-    $(menuImg).animate({scrollLeft:'-='+itemSize},scrollDuration);
+    $(menuImages).animate({scrollLeft:'-='+itemSize},scrollDuration);
   };
 
 
