@@ -19,7 +19,9 @@ General
 
 :root {
 	--color_main:#fff;
-	--color_background:#051c2d; /*#141622;*/
+	/*--color_background:#051c2d; /*#141622;*/
+	/*--color_background:#03101A; /*bk3*/
+	--color_background:#0F2A3B;
 	--color_highligh:#F9AA33;
 	--color_bar:#2f4f4f;
 }
@@ -32,7 +34,7 @@ body {
 	line-height: 1.8em;
 	max-width: 100%;
 	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow-y: auto;
 	color:var(--color_main);
 	background:var(--color_background);
 }
@@ -199,6 +201,9 @@ Introduction
 	max-width: 100%;
 	margin: 0px auto 0px auto;
 	text-align: center;
+	background-position: center center;
+	/*background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4));*/
+	background-size: cover;
   }
   
 #introduction .carousel-container {
@@ -344,7 +349,7 @@ Particles
     width: 100vw;
     height: 100vh;
     z-index:1000;
-    max-width: 100%;
+	max-width: 100%;
 }
 
 /* ================================
