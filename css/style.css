@@ -358,11 +358,6 @@ About
 	padding: 50px 0px 50px 0px;
 }
 
-
-
-
-
-
 /* ================================
 Footer
 ================================= */
@@ -372,28 +367,14 @@ footer {
 }
 
 
-
-
 /* ================================
 Horzontal Scroll
 ================================= */
-
-.box-horizontalScroll{
-	
-	height: 400px;
-	overflow-x: auto;
-	overflow-y: hidden;
-	white-space: nowrap;
-	-webkit-overflow-scrolling: touch;
-	
-}
 
 
 .menu-wrapper {
 	margin: 10px 30px 10px 30px;
 	position: relative;
-	overflow-x: hidden;
-	overflow-y: hidden;
 }
 
 .menu {
@@ -401,7 +382,7 @@ Horzontal Scroll
 	margin-left: 0;
 	height: 400px;
 	white-space: nowrap;
-	overflow-x: auto;
+	overflow-x: hidden;
 	overflow-y: hidden;
 	-webkit-overflow-scrolling: touch;
 }
