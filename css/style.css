@@ -20,8 +20,8 @@ General
 :root {
 	--color_main:#fff;
 	/*--color_background:#051c2d; /*#141622;*/
-	/*--color_background:#03101A; /*bk3*/
-	--color_background:#0F2A3B;
+	--color_background:#060D15; /*bk3*/
+	/*--color_background:#0F2A3B; /*bk6*/
 	--color_highligh:#F9AA33;
 	--color_bar:#2f4f4f;
 }
@@ -246,7 +246,7 @@ Introduction
   color: var(--color_main);
   margin: 10px auto 0 auto;
   font-size: 48px;
-  font-weight: 700;
+  font-weight: 550;
 }
 
 #introduction p {
