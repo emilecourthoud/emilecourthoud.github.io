@@ -135,6 +135,12 @@ margin, padding
   text-decoration: none;
 }
 
+/* Back to top button */
+.scroll-button {
+	font-size: 20px;
+	color:var(--color_main);
+  }
+
 
 /* ================================
 Navbar
@@ -385,7 +391,7 @@ Horzontal Scroll
 .menu {
 	margin-right: 0;
 	margin-left: 0;
-	height: 400px;
+	height: 40rem;
 	white-space: nowrap;
 	overflow-x: hidden;
 	overflow-y: hidden;

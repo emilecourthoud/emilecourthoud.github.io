@@ -299,6 +299,31 @@ function myStopFunction() {
 
 
 
+// define a resize function. use a closure for the lastBoundry determined.
+var resizeFn = function(){
+    return function(){
+        var screenWidth = $('.menu-wrapper').outerWidth(true); // get the window's inner width
+        var itemWidth = $('.flip-box').outerWidth(true);
+        var itemHeight = $('.flip-box').outerHeight(true)
+        if(itemWidth > 0.7 * screenWidth){
+          $('.menu').height(itemHeight * 0.7 * screenWidth/itemWidth);
+          $('.flip-box').width(0.7 * screenWidth);
+        }else{
+          $('.menu').height(400);
+          $('.flip-box').width(500);
+          
+        }
+    }
+};
+$(window).resize(resizeFn()); // bind the resize event handler
+$(document).ready(function(){
+    $(window).trigger('resize'); // on load, init the lastBoundry
+});
+
+
+
+
+
 
 
 
