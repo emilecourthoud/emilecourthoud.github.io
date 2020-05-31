@@ -443,7 +443,6 @@ Horzontal Scroll
 .flip-box {
 	display: inline-block;
 	height: 100%;
-	width: 450px;
 	background-color: transparent;
 	border: 1px solid var(--color_main);
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */

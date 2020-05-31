@@ -200,6 +200,8 @@ function myStopFunction() {
   // get some relevant size for the paddle triggering point
   var paddleMargin = 0.5*itemSize;
 
+  $(leftPaddle).addClass('hidden');
+  $(rightPaddle).addClass('hidden');
 
 
   var itemsLength = 12
@@ -239,8 +241,10 @@ function myStopFunction() {
 
     var menuEndOffset = menuInvisibleSize - paddleMargin;
 
+    
     // show & hide the paddles 
     // depending on scroll position
+    /*
     if (menuPosition <= paddleMargin) {
       $(leftPaddle).addClass('hidden');
       $(rightPaddle).removeClass('hidden');
@@ -251,7 +255,8 @@ function myStopFunction() {
     } else if (menuPosition >= menuEndOffset) {
       $(leftPaddle).removeClass('hidden');
       $(rightPaddle).addClass('hidden');
-  }
+    }
+    */
 
     // print important values
     $('#print-wrapper-size span').text(menuWrapperSize);
@@ -320,17 +325,30 @@ function myStopFunction() {
 // define a resize function. use a closure for the lastBoundry determined.
 var resizeFn = function(){
     return function(){
-        var screenWidth = $('.menu-wrapper').outerWidth(true); // get the window's inner width
+        var screenWidth = window.innerWidth; // get the window's inner width
+        var screenHeight = window.innerHeight; // get the window's inner height
         var itemWidth = $('.flip-box').outerWidth(true);
         var itemHeight = $('.flip-box').outerHeight(true)
+
+      
+        var scalingFactor = 0.6;
+        var ratioWidthHeight = 500/400;
+        if(itemWidth/screenWidth > itemHeight/screenHeight){
+          $('.menu').height(scalingFactor * screenWidth/ratioWidthHeight);
+          $('.flip-box').width(scalingFactor * screenWidth);
+        }else{
+          $('.menu').height(scalingFactor * screenHeight);
+          $('.flip-box').width(scalingFactor * screenHeight*ratioWidthHeight);
+        }
+        /*
         if(itemWidth > 0.7 * screenWidth){
           $('.menu').height(itemHeight * 0.7 * screenWidth/itemWidth);
           $('.flip-box').width(0.7 * screenWidth);
         }else{
-          $('.menu').height(400);
-          $('.flip-box').width(500);
-          
+          $('.menu').height(350);
+          $('.flip-box').width(450);
         }
+        */
     }
 };
 $(window).resize(resizeFn()); // bind the resize event handler
