@@ -69,6 +69,22 @@
   })();
 */
 
+// Fixed navbar
+$(window).scroll(function () {
+  var scrollTop = $(window).scrollTop();
+  var heightChange = 10; //  window.innerHeigh
+  //if (scrollTop > window.innerHeight) {
+  if (scrollTop > heightChange) {
+    $('.navbar-default').css('background-color', 'rgba(47, 79, 79, 0.95)');
+    $('.navbar-default').css('display', 'block');
+    $('.navbar-default').addClass('fixed-to-top');
+
+  } else if (scrollTop <= heightChange) {
+    $('.navbar-default').css('background-color', 'rgba(47, 79, 79, 0.0)');
+    $('.navbar-default').css('display', 'block');
+    $('.navbar-default').addClass('fixed-to-top');
+  }
+});
 
 
 /*
@@ -92,6 +108,7 @@
 
 
 //$("nav").hide();
+/*
 $("nav").fadeOut('slow');
 
 $("html").mousemove(function( event ) {
@@ -112,6 +129,7 @@ function myStopFunction() {
         clearTimeout(myVar);
     }
 }
+*/
 
 
 

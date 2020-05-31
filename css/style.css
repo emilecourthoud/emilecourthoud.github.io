@@ -391,7 +391,6 @@ Horzontal Scroll
 .menu {
 	margin-right: 0;
 	margin-left: 0;
-	height: 40rem;
 	white-space: nowrap;
 	overflow-x: hidden;
 	overflow-y: hidden;
@@ -399,7 +398,6 @@ Horzontal Scroll
 }
 
 .paddles {
-
 }
 .paddle {
 	margin: 20px 10px 20px 10px;
@@ -445,7 +443,7 @@ Horzontal Scroll
 .flip-box {
 	display: inline-block;
 	height: 100%;
-	width: 500px;
+	width: 450px;
 	background-color: transparent;
 	border: 1px solid var(--color_main);
 	perspective: 1000px; /* Remove this if you don't want the 3D effect */
