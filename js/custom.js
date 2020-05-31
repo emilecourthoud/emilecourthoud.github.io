@@ -196,14 +196,12 @@ function myStopFunction() {
   var flipBox = document.getElementsByClassName('flip-box');
   var itemSize = $('.flip-box').outerWidth(true);
   // duration of scroll animation
-  var scrollDuration = 1.25*itemSize;
+  var scrollDuration = 300*itemSize;
   // get some relevant size for the paddle triggering point
+
+
+  /*
   var paddleMargin = 0.5*itemSize;
-
-  $(leftPaddle).addClass('hidden');
-  $(rightPaddle).addClass('hidden');
-
-
   var itemsLength = 12
 
   // get wrapper width
@@ -244,7 +242,7 @@ function myStopFunction() {
     
     // show & hide the paddles 
     // depending on scroll position
-    /*
+    
     if (menuPosition <= paddleMargin) {
       $(leftPaddle).addClass('hidden');
       $(rightPaddle).removeClass('hidden');
@@ -256,7 +254,7 @@ function myStopFunction() {
       $(leftPaddle).removeClass('hidden');
       $(rightPaddle).addClass('hidden');
     }
-    */
+    
 
     // print important values
     $('#print-wrapper-size span').text(menuWrapperSize);
@@ -264,12 +262,15 @@ function myStopFunction() {
     $('#print-menu-invisible-size span').text(menuInvisibleSize);
     $('#print-menu-position span').text(menuPosition);
     
+    
   });
+  
 
   // update the variables
   var getMenuWrapperSize = function() {
     return $('.menu-wrapper').outerWidth();
   }
+  */
 
 
   $(document.getElementsByClassName('right_VDA')).on('click', function() {
