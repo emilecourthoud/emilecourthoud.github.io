@@ -397,8 +397,7 @@ Horzontal Scroll
 	-webkit-overflow-scrolling: touch;
 }
 
-.paddles {
-}
+/*.paddles {}*/
 .paddle {
 	margin: 20px 10px 20px 10px;
 	position: absolute;

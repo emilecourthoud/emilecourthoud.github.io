@@ -10,8 +10,22 @@
 <head>
     <title>Emile Courthoud</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <meta charset="utf-8" />
+
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin="">
+    </script>
+    <style>
+      #mapid { height: 300px; }
+    </style>
+
+    
 
 <!--    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">-->
     <!-- css -->
@@ -21,7 +35,7 @@
     <link href="css/style.css" rel="stylesheet" media="screen">
     <link href="color/default.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
 </head>
 
 
@@ -53,10 +67,10 @@
       <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
             <li class="current"><a href="#introduction" >Home</a></li>
-            <!--<li><a href="#about">Biography</a></li>-->
             <li><a href="about_me.html"><span>About me</span> </a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="res/Emile_Courthoud CurriculumVitae.pdf">CV</a></li>
+            <li><a href="res/CV_Emile_Courthoud.pdf">CV</a></li>
+            <!--li><a href="courses.html">Courses</a></li-->
             <!--<li><a href="https://teche-community.github.io/" target="_blank">TechE-community</a></li>-->
           </ul>
         </div>
@@ -65,37 +79,6 @@
   </nav>
 
 
-<!------------------------------
- -----------------------------
-            HOME 
- -----------------------------
--------------------------------->
-  <section>
-      <div id="particles-js">
-      </div>
-
-
-      <div id="introduction" style="background-image: url('img/background/bk3.jpg')">
-          <div class="carousel-container">
-              <div class="carousel-content">
-                  <img class="portrait" src="img/intro/bio2.JPG">
-                  <h2> Emile Courthoud</h2>
-                  <h3> <em>Blown by the Wind </em></h3>
-                  <a href="#about" class="btn-get-started"> Read More</a>
-
-              </div>
-          </div>
-      </div>
-  </section>
-
-  <script src= "particles.js"></script>
-
-  <script>
-      particlesJS.load('particles-js',
-       'particles.json', function() {
-      console.log('particles.json loaded...');
-      });
-  </script>
 
 
 <!------------------------------
@@ -103,35 +86,21 @@
               ABOUT 
   -----------------------------
 -------------------------------->
+
   <section id="about">
     <div class="container">
-      
-      <h2>Biography</h2>
-      
+      <h2>Graph</h2>
 
       I am a Management Consultant at <a href="https://www.spacetec.partners/" target="_blank" >SpaceTec Partners</a>, Münich. I specialize in market development, innovation advisory, and management consulting.<br />
       My work experience spans different fields, from the biomechanical/dental industry to the frontier of meta-material research and I am currently working in the space industry. My main areas of expertise are Earth observation, satellite navigation and communication, space exploration and transportation. I have a background in mechanical engineering and a strong passion for data analysis and computer science.<br />
-      <br />
-      For any business-related request, please contact me via <a href="https://www.linkedin.com/in/emile-courthoud-36a413159/" target="_blank" >Linkedin</a>.
-      <div class="row">
-        <div class="col-md-6">
-          <h3> Education</h3>
-          <ul>
-              <li>2020, MSc in Mechanical Engineering, GPA 5.5/6 <br> ETH Zürich, Switzerland</li>
-              <li>2017, BSc in Mechanical Engineering, 110/110 cum Laude <br> Politecnico di Torino, Italy</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h3> Experience</h3>
-          <ul>
-              <li>February 2020 - present, Management Consultant <br> SpaceTec Partners, Münich, Germany</li>
-              <li>June 2018 - February 2019, Product Development Engineer, Intern <br> Nobel Biocare, Zürich, Switzerland</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+    
+      <!-- Leaflet -->
+      <!--<div id="mapid"></div-->
+  
+      
+      
 
+  </section>
 
 <!------------------------------
   -----------------------------
