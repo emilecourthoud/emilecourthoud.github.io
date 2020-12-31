@@ -20,10 +20,12 @@ General
 :root {
 	--color_main:#fff;
 	/*--color_background:#051c2d; /*#141622;*/
-	--color_background:#060D15; /*bk3*/
+	/*--color_background:#060D15; /*bk3*/
+	/*--color_background:#080C16;*/
+	--color_background:#0A0E17;
 	/*--color_background:#0F2A3B; /*bk6*/
 	--color_highligh:#F9AA33;
-	--color_bar:#2f4f4f;
+	--color_bar:#123879;
 }
 
 
@@ -87,7 +89,7 @@ button {
 button.navbar-toggle {
 	background:var(--color_bar);
 	/*border: none;*/
-	color: #fff;
+	color:var(--color_main);
 }
 
 

@@ -77,12 +77,12 @@ $(window).scroll(function () {
   var heightChange = 10; //  window.innerHeigh
   //if (scrollTop > window.innerHeight) {
   if (scrollTop > heightChange) {
-    $('.navbar-default').css('background-color', 'rgba(47, 79, 79, 0.95)');
+    $('.navbar-default').css('background-color', 'rgba(18, 56, 121, 0.95)');
     $('.navbar-default').css('display', 'block');
     $('.navbar-default').addClass('fixed-to-top');
 
   } else if (scrollTop <= heightChange) {
-    $('.navbar-default').css('background-color', 'rgba(47, 79, 79, 0.0)');
+    $('.navbar-default').css('background-color', 'rgba(18, 56, 121, 0.0)');
     $('.navbar-default').css('display', 'block');
     $('.navbar-default').addClass('fixed-to-top');
   }
