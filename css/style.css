@@ -57,6 +57,13 @@ h3 {
 	font-size: 2.6rem;
 }
 
+/* paragraph */
+p.padding {
+	/*line-height: 1.2;*/
+	padding-bottom:1px;
+	text-align: left;
+}
+
 /* links */
 a {
 	position:relative;
@@ -68,6 +75,16 @@ a {
 }
 
 button {
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size:var(--fontSize_main);
+	margin: 2px 1px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	background-color:0;
+	/*
 	display: inline-block;
 	margin-bottom: 0;
 	margin-bottom: 10px;
@@ -85,7 +102,38 @@ button {
 	-ms-user-select: none;
 	-o-user-select: none;
 	user-select: none;
+	*/
 }
+
+
+
+.buttonSkill1 {
+	border: 2px solid var(--color_bar);
+	color: #5CAFFF;}
+.buttonSkill1:hover {
+	background-color: #5CAFFF;
+	color: white;}
+.buttonSkill2 {
+	border: 2px solid var(--color_bar);
+	color: #EDB230;}
+.buttonSkill2:hover {
+	background-color: #EDB230;
+	color: white;}
+.buttonSkill3 {
+	border: 2px solid var(--color_bar);
+	color: #B4436C;/*#EB5160;*/}
+.buttonSkill3:hover {
+	background-color: #B4436C;/*#EB5160;*/
+	color: white;}
+.buttonSkill4 {
+	border: 2px solid var(--color_bar);
+	color: #ACE4AA;}
+.buttonSkill4:hover {
+	background-color: #ACE4AA;
+	color: white;}
+
+
+
 
 button.navbar-toggle {
 	background:var(--color_bar);
