@@ -13,7 +13,7 @@
     <meta charset="utf-8" />
 
 
-    <!-- Leaflet -->
+    <!-- Leaflet 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
       integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
       crossorigin=""/>
@@ -24,7 +24,7 @@
     <style>
       #mapid { height: 300px; }
     </style>
-
+    -->
     
 
 <!--    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">-->
@@ -33,12 +33,78 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/style.css" rel="stylesheet" media="screen">
-    <link href="color/default.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style2.css">
     
 </head>
 
+<style>
+  #introduction {
+    width: 100vw;
+    height: 50vh;
+    max-width: 100%;
+    position:relative;
+    top:72px;
+  }
 
+  #introduction h2 {
+    z-index:999;
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 200;
+    max-width: 100%;
+  }
+
+  #introuction p {
+    z-index:999;
+    width: 50vw;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+    max-width: 100%;
+  }
+
+  #introduction .btn-get-started {
+    z-index:999;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 3px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    border: 2px solid #F9AA33;
+  }
+
+  #introduction .btn-get-started:hover {
+    background: #F9AA33;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #introduction .carousel-container {
+    height: 30vh;
+    width: 70vw;
+    position: relative;
+    z-index: 999;
+    left: 50%;
+    margin-left: -35vw;
+    top: 50%;
+    margin-top: -15vh;
+  }
+
+  #introduction .carousel-content {
+    text-align: center;
+  }
+</style>
 <!------------------------------
   -----------------------------
               BODY 
@@ -66,9 +132,8 @@
 
       <div class="navigation collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav">
-            <li class="current"><a href="#introduction" >Home</a></li>
-            <li><a href="about_me.html"><span>About me</span> </a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html"><span>Home</span> </a></li>
+            <li class="current"><a href="#introduction" >Projects</a></li>
             <li><a href="res/CV_Emile_Courthoud.pdf">CV</a></li>
             <!--li><a href="courses.html">Courses</a></li-->
             <!--<li><a href="https://teche-community.github.io/" target="_blank">TechE-community</a></li>-->
@@ -87,6 +152,7 @@
   -----------------------------
 -------------------------------->
 
+<!--
   <section id="about">
     <div class="container">
       <h2>Graph</h2>
@@ -95,24 +161,201 @@
       My work experience spans different fields, from the biomechanical/dental industry to the frontier of meta-material research and I am currently working in the space industry. My main areas of expertise are Earth observation, satellite navigation and communication, space exploration and transportation. I have a background in mechanical engineering and a strong passion for data analysis and computer science.<br />
     
       
-      <!-- Leaflet -->
-      <!--div id="mapid"></div-->
-  
-      
-      
+      Leaflet
+      div id="mapid"></div
 
   </section>
+
+-->
+
+  <!-- Header -->
+  <div id="particles-js" class="header">
+  </div>
+
+  <script src= "particles.js"></script>
+
+  <script>
+      particlesJS.load('particles-js',
+       'particles.json', function() {
+      console.log('particles.json loaded...');
+      });
+  </script>
+
+
+    <!-- Main -->
+    <main id="site-main">
+      <div class="site-main-out">
+          <div class="site-main-in">
+            <article class="hcard">
+                <a class="hcard-link">
+                    <div class="hcard-image">
+                        <div style="position:relative; overflow:hidden; height: 100%;">
+                            <div style="width: 100%;padding-bottom: 66.758%;"> </div>
+                            <img src="img/articles/img1.png" alt="" style="position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;object-fit: cover;object-position: center center;opacity: 0;transition-delay: 500ms;">
+                            <picture>
+                                <source srcset="img/articles/img1.png" sizes="(max-width-3200px) 100vw, 3200px">
+                                <img sizes="(max-width-3200px) 100vw, 3200px" src="img/articles/img1.png" alt=""
+                                style="position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center center;
+                                opacity: 1;
+                                transition: opacity 500ms ease 0s;">
+                            </picture>
+                        </div>
+                    </div>
+                </a>
+                <div class="hcard-text">
+                  <a class="hcard-link-text">
+                      <div align="left">
+                          <header>
+                              <span  class="hcard-link-text-ref"> ARTICLE</span>
+                              <h2 class="hov" style="font-weight:500">How to get a job as management consultant</h2>
+                          </header>
+                          <section>
+                              <p class="hov"> The viewpoint of a mechanical engineer: how to understand if the job is the right fit for you and a guide for the interview</p>
+                          </section>
+                      </div>
+                  </a>
+                  <footer>
+                    <span class="hcard-author">Emile</span>
+                  </footer>
+                </div>
+            </article>
+            <article class="hcard">
+                <a class="hcard-link">
+                    <div class="hcard-image">
+                        <div style="position:relative; overflow:hidden; height: 100%;">
+                            <div style="width: 100%;padding-bottom: 66.758%;"> </div>
+                            <img src="img/articles/img1.png" alt="" style="position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;object-fit: cover;object-position: center center;opacity: 0;transition-delay: 500ms;">
+                            <picture>
+                                <source srcset="img/articles/img1.png" sizes="(max-width-3200px) 100vw, 3200px">
+                                <img sizes="(max-width-3200px) 100vw, 3200px" src="img/articles/img1.png" alt=""
+                                style="position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center center;
+                                opacity: 1;
+                                transition: opacity 500ms ease 0s;">
+                            </picture>
+                        </div>
+                    </div>
+                </a>
+                <div class="hcard-text">
+                  <a class="hcard-link-text">
+                      <div align="left">
+                          <header>
+                              <span  class="hcard-link-text-ref"> ARTICLE</span>
+                              <h2 style="font-weight:500">How to get a job as management consultant</h2>
+                          </header>
+                          <section>
+                              <p> The viewpoint of a mechanical engineer: how to understand if the job is the right fit for you and a guide for the interview</p>
+                          </section>
+                      </div>
+                  </a>
+                  <footer>
+                    <span class="hcard-author">Emile</span>
+                  </footer>
+                </div>
+            </article>
+            <article class="hcard">
+                <a class="hcard-link">
+                    <div class="hcard-image">
+                        <div style="position:relative; overflow:hidden; height: 100%;">
+                            <div style="width: 100%;padding-bottom: 66.758%;"> </div>
+                            <img src="img/articles/img1.png" alt="" style="position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;object-fit: cover;object-position: center center;opacity: 0;transition-delay: 500ms;">
+                            <picture>
+                                <source srcset="img/articles/img1.png" sizes="(max-width-3200px) 100vw, 3200px">
+                                <img sizes="(max-width-3200px) 100vw, 3200px" src="img/articles/img1.png" alt=""
+                                style="position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center center;
+                                opacity: 1;
+                                transition: opacity 500ms ease 0s;">
+                            </picture>
+                        </div>
+                    </div>
+                </a>
+                <div class="hcard-text">
+                  <a class="hcard-link-text">
+                      <div align="left">
+                          <header>
+                              <span  class="hcard-link-text-ref"> ARTICLE</span>
+                              <h2 style="font-weight:500">How to get a job as management consultant</h2>
+                          </header>
+                          <section>
+                              <p> The viewpoint of a mechanical engineer: how to understand if the job is the right fit for you and a guide for the interview</p>
+                          </section>
+                      </div>
+                  </a>
+                  <footer>
+                    <span class="hcard-author">Emile</span>
+                  </footer>
+                </div>
+            </article>
+            <article class="hcard">
+                <a class="hcard-link">
+                    <div class="hcard-image">
+                        <div style="position:relative; overflow:hidden; height: 100%;">
+                            <div style="width: 100%;padding-bottom: 66.758%;"> </div>
+                            <img src="img/articles/img1.png" alt="" style="position: absolute;top: 0px;left: 0px;width: 100%;height: 100%;object-fit: cover;object-position: center center;opacity: 0;transition-delay: 500ms;">
+                            <picture>
+                                <source srcset="img/articles/img1.png" sizes="(max-width-3200px) 100vw, 3200px">
+                                <img sizes="(max-width-3200px) 100vw, 3200px" src="img/articles/img1.png" alt=""
+                                style="position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center center;
+                                opacity: 1;
+                                transition: opacity 500ms ease 0s;">
+                            </picture>
+                        </div>
+                    </div>
+                </a>
+                <div class="hcard-text">
+                  <a class="hcard-link-text">
+                      <div align="left">
+                          <header>
+                              <span  class="hcard-link-text-ref"> ARTICLE</span>
+                              <h2 style="font-weight:500">How to get a job as management consultant</h2>
+                          </header>
+                          <section>
+                              <p> The viewpoint of a mechanical engineer: how to understand if the job is the right fit for you and a guide for the interview</p>
+                          </section>
+                      </div>
+                  </a>
+                  <footer>
+                    <span class="hcard-author">Emile</span>
+                  </footer>
+                </div>
+            </article>
+          </div>
+      </div>
+  </main>
 
 <!------------------------------
   -----------------------------
             FOOTER 
   -----------------------------
 -------------------------------->
-  <footer>
-    <p>Content &copy; 2020 Emile Courthoud </p>
-  </footer>
+<footer>
+  <p>Content &copy; <script>document.write(new Date().getFullYear())</script> Emile Courthoud </p>
+</footer>
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 <!------------------------------
   -----------------------------

@@ -83,7 +83,7 @@ button {
 	margin: 2px 1px;
 	transition-duration: 0.4s;
 	cursor: pointer;
-	background-color:0;
+	background-color: rgba(18,56,121,0.2)
 	/*
 	display: inline-block;
 	margin-bottom: 0;
@@ -425,6 +425,202 @@ footer {
 	font-size:var(--fontSize_main);
 	padding:22px 0px 8px 0px;
 }
+
+
+
+/* ================================
+Input - hello
+================================= */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid  rgba(18,56,121,1);
+  background-color: rgba(18,56,121,0.2);
+  color: white;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
+}
+
+
+input[type=submit] {
+  background-color: rgba(18,56,121,1);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--color_highligh);
+}
+
+
+/* ================================
+Articlesssssss
+================================= */
+
+#site-main {
+    z-index: 100;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    position: relative;
+    padding: 0 4vw;
+}
+
+.site-main-out {
+    margin: 0 auto;
+    max-width: 1040px;
+    width: 100%;
+}
+
+.site-main-in {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    padding: 40px 0 0 0;
+    margin-top: -70px;
+    padding-top: 0;
+}
+
+/* ================================
+An article
+================================= */
+
+.hcard {
+    webkit-flex: 1 1 300px;
+    -ms-flex: 1 1 300px;
+    flex: 1 1 300px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 20px 40px;
+    min-height: 300px;
+    background: #fff center center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39,44,49,0.03) 1px 3px 8px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.hcard:hover{
+    box-shadow: rgba(39,44,49,0.07) 8px 28px 50px, rgba(39,44,49,0.04) 1px 6px 12px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-transform: translate3D(0,-1px,0) scale(1.05);
+    -ms-transform: translate3D(0,-1px,0) scale(1.05);
+    transform: translate3D(0,-1px,0) scale(1.05);
+}
+
+.hcard-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.hcard-link-text {
+    position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: block;
+    padding: 25px 25px 0;
+    color: #15171A;
+}
+
+.hcard-link-text:hover {
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+
+.hcard-link-text-ref {
+    display: block;
+    margin-bottom: 4px;
+    color: #738a94;
+    font-size: 1.2rem;
+    line-height: 1.15em;
+    font-weight: 500;
+    -webkit-letter-spacing: 0.5px;
+    -moz-letter-spacing: 0.5px;
+    -ms-letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.hcard-author {
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-left: 0px;
+    color: #738a94;
+    font-size: 1.2rem;
+    line-height: 33px;
+    font-weight: 500;
+    -webkit-letter-spacing: 0.5px;
+    -moz-letter-spacing: 0.5px;
+    -ms-letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.hcard-image {
+    width: auto;
+    height: 200px;
+    background: #c5d2d9 no-repeat center center;
+    background-size: cover;
+}
+
+.hcard-text {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+
 
 
 /* ================================
