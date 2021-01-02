@@ -426,51 +426,16 @@ footer {
 	padding:22px 0px 8px 0px;
 }
 
-
-
 /* ================================
-Input - hello
+Articlesssssss
 ================================= */
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid  rgba(18,56,121,1);
-  background-color: rgba(18,56,121,0.2);
-  color: white;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+.logo
+{
+width:150px;
+height:150px;
+padding: 0px 10px 10px 10px;
 }
-
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-    transition: background-color 5000s ease-in-out 0s;
-}
-/*Change text in autofill textbox*/
-input:-webkit-autofill {
-  -webkit-text-fill-color: white !important;
-}
-
-
-input[type=submit] {
-  background-color: rgba(18,56,121,1);
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: var(--color_highligh);
-}
-
 
 /* ================================
 Articlesssssss
