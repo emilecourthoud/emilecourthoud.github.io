@@ -70,7 +70,7 @@ button[aria-label][data-balloon-pos] {
   [aria-label][data-balloon-pos][data-balloon-pos*="-left"]:hover:before, [aria-label][data-balloon-pos][data-balloon-pos*="-left"][data-balloon-visible]:before, [aria-label][data-balloon-pos][data-balloon-pos*="-right"]:hover:before, [aria-label][data-balloon-pos][data-balloon-pos*="-right"][data-balloon-visible]:before {
     transform: translate(0, 0); }
   [aria-label][data-balloon-pos][data-balloon-pos^="up"]:before, [aria-label][data-balloon-pos][data-balloon-pos^="up"]:after {
-    bottom: 500%;
+    bottom: 450%;
     transform-origin: top;
     transform: translate(0, var(--balloon-move)); }
   [aria-label][data-balloon-pos][data-balloon-pos^="up"]:after {
