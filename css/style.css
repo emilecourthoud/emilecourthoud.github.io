@@ -12,6 +12,7 @@ Imports
 @import url('simpletextrotator.css');
 @import url('overwrite.css');
 @import url('animate.css');
+@import url('balloon.css');
 
 /* ================================
 General
@@ -374,7 +375,6 @@ Introduction
 
 #introduction .btn-get-started {
   z-index:1001;
-  
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -432,9 +432,9 @@ Articlesssssss
 
 .logo
 {
-width:150px;
-height:150px;
-padding: 0px 10px 10px 10px;
+width:180px;
+height:180px;
+padding: 25px 10px 30px 10px;
 }
 
 /* ================================
@@ -697,3 +697,16 @@ Horzontal Scroll
 	text-align: center;
   }
 
+
+  /* tooltip */
+  .tooltip-red {
+    --balloon-color: red;
+  }
+  
+  .tooltip-big-text {
+    --balloon-font-size: 20px;
+  }
+  
+  .tooltip-slide {
+    --balloon-move: 30px;
+  }
