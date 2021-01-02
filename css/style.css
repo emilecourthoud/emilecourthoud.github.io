@@ -33,7 +33,7 @@ General
 
 
 body {
-    font-family: 'Montserrat',sans-serif;;
+  font-family: 'Montserrat',sans-serif;;
 	font-size:var(--fontSize_main);
 	line-height: 1.5em;
 	max-width: 100%;
@@ -42,6 +42,13 @@ body {
 	color:var(--color_main);
 	background:var(--color_background);
 }
+
+/*
+.repeatBackground{
+  background-repeat: repeat-y;
+  background-image: url('img/background/universeUp.jpeg');
+}
+*/
 
 /* ==== FONT ==== */
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
@@ -58,6 +65,8 @@ h2 {
 h3 {
 	font-size: 2.6rem;
 }
+
+
 
 /* paragraph */
 p.padding {
@@ -428,7 +437,7 @@ footer {
 }
 
 /* ================================
-Articlesssssss
+Logo contact
 ================================= */
 
 .logo
@@ -439,7 +448,7 @@ padding: 25px 10px 30px 10px;
 }
 
 /* ================================
-Articlesssssss
+Articlesssssss hello
 ================================= */
 
 #site-main {
@@ -491,7 +500,7 @@ An article
     overflow: hidden;
     margin: 0 20px 40px;
     min-height: 300px;
-    background: #fff center center;
+    background: rgba(18,56,121,0.5) center center;
     background-size: cover;
     border-radius: 5px;
     box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39,44,49,0.03) 1px 3px 8px;
@@ -516,14 +525,13 @@ An article
 }
 
 .hcard-link-text {
-    position: relative;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
     display: block;
-    padding: 25px 25px 0;
-    color: #15171A;
+    color: white;
+    padding: 10px 20px 10px 20px;
 }
 
 .hcard-link-text:hover {
@@ -531,41 +539,74 @@ An article
     text-decoration: none;
 }
 
-.hcard-link-text-ref {
-    display: block;
-    margin-bottom: 4px;
-    color: #738a94;
-    font-size: 1.2rem;
-    line-height: 1.15em;
-    font-weight: 500;
-    -webkit-letter-spacing: 0.5px;
-    -moz-letter-spacing: 0.5px;
-    -ms-letter-spacing: 0.5px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+.hcard-header {
+  display: block;
+  /*color: #738a94;*/
+  font-size: 1.2rem;
+  line-height: 1.15em;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  /*text-transform: uppercase;*/
+  padding: 10px 15px 10px 15px;
 }
 
-.hcard-author {
-    -webkit-flex-shrink: 0;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    margin-left: 0px;
-    color: #738a94;
-    font-size: 1.2rem;
-    line-height: 33px;
-    font-weight: 500;
-    -webkit-letter-spacing: 0.5px;
-    -moz-letter-spacing: 0.5px;
-    -ms-letter-spacing: 0.5px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+.hcard-title {
+  font-size: 3em;
+  color: var(--color_highligh);
+  padding: 10px 15px 0px 15px;
+  font-weight: bold;
+  line-height: 40px;
 }
+
+.hcard-about{
+  font-size: 1.3em;
+  padding: 0px 15px 0px 15px;
+  line-height: 25px;
+}
+
+.hcard-about-author{
+  font-size: 1.1rem;
+  color:#D0CECE;
+}
+
+
+.hcard-footer {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  /*padding: 100px 10px 10px 10px;*/
+  /*color: blue;
+  background:var(--color_bar);*/
+  font-size: 1.1rem;
+  line-height: 20px;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  /*text-transform: uppercase;*/
+  padding: 10px 15px 10px 15px;
+}
+
 
 .hcard-image {
-    width: auto;
-    height: 200px;
-    background: #c5d2d9 no-repeat center center;
-    background-size: cover;
+  width: auto;
+  height: 200px;
+  background: #c5d2d9 no-repeat center center;
+  background-size: cover;
+}
+
+.hcard-image-imgStyle{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 1;
+  transition: opacity 500ms ease 0s;
 }
 
 .hcard-text {
@@ -585,7 +626,6 @@ An article
     -ms-flex-pack: justify;
     justify-content: space-between;
 }
-
 
 
 
@@ -687,27 +727,13 @@ Horzontal Scroll
   }
   
   /* Style the back side   */
-  .flip-box-back {
+.flip-box-back {
 	transform: rotateY(180deg);
     position: absolute;
 	background-size: cover;
 	background-position: center center;
 }
 
-  .flip-box-back h2, p {
+.flip-box-back h2, p {
 	text-align: center;
-  }
-
-
-  /* tooltip */
-  .tooltip-red {
-    --balloon-color: red;
-  }
-  
-  .tooltip-big-text {
-    --balloon-font-size: 20px;
-  }
-  
-  .tooltip-slide {
-    --balloon-move: 30px;
-  }
+}
