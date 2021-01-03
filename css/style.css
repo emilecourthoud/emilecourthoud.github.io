@@ -213,8 +213,8 @@ Navbar
 
 
 nav.navbar{
-    z-index: 1003;
-    overflow: hidden;
+  z-index: 1003;
+  overflow: hidden;
 	position: fixed;
 	padding: 4px 0px 4px 0px;
 	width: 100%;
@@ -522,7 +522,7 @@ An article
 
 
   
-    max-width: 300px;
+    /*max-width: 300px;*/
 
 
 
