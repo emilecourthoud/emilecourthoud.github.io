@@ -477,6 +477,7 @@ Articlesssssss hello
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
+    padding: 40px 10px 0 10px;
     /*
     position: relative;
     padding: 0 4vw;
@@ -499,19 +500,23 @@ Articlesssssss hello
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 -20px;
-    padding: 40px 0 0 0;
+    padding: 40px 30px 0 30px;
     margin-top: -70px;
     padding-top: 0;
 }
 
-
-.block{
-  display: block;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
+/* ================================
+Subtitle
+================================= */
+.subt {
+  font-size: 2rem;
+  line-height: 1.15em;
+  font-weight: 500;
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
 }
 
 /* ================================
@@ -519,14 +524,7 @@ An article
 ================================= */
 
 .hcard {
-
-
-  
     /*max-width: 300px;*/
-
-
-
-
     webkit-flex: 1 1 300px;
     -ms-flex: 1 1 300px;
     flex: 1 1 300px;
@@ -581,6 +579,10 @@ An article
     text-decoration: none;
 }
 
+.hcard-description {
+  padding: 5px 10px 5px 10px;
+}
+
 .hcard-header {
   display: block;
   /*color: #738a94;*/
@@ -591,20 +593,19 @@ An article
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   /*text-transform: uppercase;*/
-  padding: 6px 15px 0px 15px;
+  padding-bottom: 10px;
 }
 
 .hcard-title {
   font-size: 2.3rem;
   color: var(--color_highligh);
-  padding: 15px 15px 8px 15px;
   font-weight: bold;
   line-height: 25px;
+  padding-bottom: 10px;
 }
 
 .hcard-about{
   font-size: 1.2rem;
-  padding: 0px 15px 0px 15px;
   line-height: 16px;
 }
 
@@ -618,10 +619,9 @@ An article
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  /*position: relative;
-  bottom: 10px;
-  left: 15px;
-  right: 15px;*/
+  position: relative;
+  bottom: 0px;
+  left: 0px;
   /*padding: 100px 10px 10px 10px;*/
   /*color: blue;
   background:var(--color_bar);*/
@@ -632,7 +632,7 @@ An article
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   /*text-transform: uppercase;*/
-  padding: 10px 15px 6px 15px;
+  padding-top: 15px;
 }
 
 
@@ -687,7 +687,6 @@ Filter
   text-align: center;
   margin: 2px;
   */
-  margin: 5px 20px 20px 20px;
   display: none;
 }
 

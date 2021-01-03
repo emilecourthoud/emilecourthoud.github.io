@@ -1202,9 +1202,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.82769895"
-     inkscape:cx="389.19607"
-     inkscape:cy="307.54093"
+     inkscape:zoom="1.3765229"
+     inkscape:cx="334.47516"
+     inkscape:cy="477.77258"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -2089,7 +2089,7 @@
        xml:space="preserve"
        id="text904-9-3-3-5-2-7-8-6"
        style="font-style:normal;font-weight:normal;font-size:6.33802999999999983px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect906-0-0-7-2-8-0-4-8);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-miterlimit:4;stroke-dasharray:none;"
-       transform="matrix(0.66792576,0,0,0.66792576,-21.264408,170.91739)"
+       transform="matrix(0.66792576,0,0,0.66792576,-20.206074,170.91739)"
        inkscape:transform-center-x="11.859494"
        inkscape:transform-center-y="-10.299034"><tspan
          x="42.611328"
@@ -2264,8 +2264,8 @@
     <circle
        style="fill:#b4436c;fill-opacity:1;stroke:none;stroke-width:0.767323"
        id="path865-6-1-7-9-6-50"
-       cx="84.360001"
-       cy="146.4774"
+       cx="76.048805"
+       cy="143.28079"
        r="6.25" />
     <text
        inkscape:transform-center-y="-10.299034"
@@ -2294,7 +2294,7 @@
     <text
        inkscape:transform-center-y="-10.299034"
        inkscape:transform-center-x="11.859494"
-       transform="matrix(0.66792576,0,0,0.66792576,25.863746,155.02868)"
+       transform="matrix(0.66792576,0,0,0.66792576,55.162431,153.75004)"
        style="font-style:normal;font-weight:normal;font-size:6.33802999999999983px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect906-0-0-7-2-8-0-4-0-7);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-miterlimit:4;stroke-dasharray:none;"
        id="text904-9-3-3-5-2-7-8-2-8"
        xml:space="preserve"><tspan
@@ -2310,7 +2310,7 @@
        xml:space="preserve"
        id="text904-9-3-3-8-6-6-4-2-0-5"
        style="font-style:normal;font-weight:normal;font-size:5.28169000000000022px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect906-0-0-7-6-5-3-3-6-5-1);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-miterlimit:4;stroke-dasharray:none;"
-       transform="matrix(0.66792576,0,0,0.66792576,18.678841,164.87647)"><tspan
+       transform="matrix(0.66792576,0,0,0.66792576,19.737175,164.87647)"><tspan
          x="42.611328"
          y="-12.001666"><tspan>Storytelling</tspan></tspan></text>
     <circle
@@ -2465,12 +2465,6 @@
          x="42.611328"
          y="-6.5416318"><tspan
            style="shape-inside:url(#rect906-5-4-9-8-6-1-6)">services</tspan></tspan></text>
-    <circle
-       r="2"
-       cy="3.4954646"
-       cx="105.04478"
-       id="path865-1-1-0-3-7-7-5"
-       style="fill:#edb230;fill-opacity:1;stroke:none;stroke-width:0.245543" />
     <text
        xml:space="preserve"
        id="text1091"
@@ -2537,7 +2531,7 @@
        xml:space="preserve"
        id="text904-9-3-3-5-2-9"
        style="font-style:normal;font-weight:normal;font-size:6.33802999999999983px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect906-0-0-7-2-8-9);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-miterlimit:4;stroke-dasharray:none;"
-       transform="matrix(0.66792576,0,0,0.66792576,34.130244,104.65443)"><tspan
+       transform="matrix(0.66792576,0,0,0.66792576,33.601077,104.12526)"><tspan
          x="42.611328"
          y="-11.037936"><tspan>Analytical thinking</tspan></tspan></text>
     <text

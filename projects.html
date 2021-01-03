@@ -23,8 +23,8 @@
   -----------------------------
 -------------------------------->
 
-<!--body class="repeatBackground"-->
-<body>
+<body class="repeatBackground">
+
 <!------------------------------
   -----------------------------
               NAVBAR 
@@ -101,11 +101,12 @@
 -->
 <!--section class="containerBackground" style="background-image: url('img/background/universeUp.jpeg')"></section-->
 
-<section style="padding:30px 40px 30px 40px; height:50vh">
+<section style="padding:40px 40px 30px 40px; height:50vh">
   <div class="container">
     <div class="row">
       <div id="myBtnContainer">
-        <h2>Filter</h2>
+        <h2>Projects and activities</h2>
+        <div class="subt">What areas would you like to explore?</div>
         <button class="btt buttonSkill1" onclick="filterSelection('filter1')">Strategy and data science</button>
         <button class="btt buttonSkill2" onclick="filterSelection('filter2')">Fields of expertise and interest</button>
         <button class="btt buttonSkill3" onclick="filterSelection('filter3')">Skills and competencies</button>
@@ -116,29 +117,59 @@
 </section>
 
 <!-- Main -->
+
 <main id="site-main">
-
-  
-
-
-
-
-
-
 
   <div class="site-main-out">
     <div class="site-main-in">
 
 
-      
-
-      
-
       <!--article class="filterDiv filter1 filter2 filter3 filter4">
       </article-->
 
-        <article class="hcard">
-          <a class="hcard-link" href="https://medium.com/p/a554d9e2cb59/" target="_blank">
+        <article class="hcard filterDiv filter1 filter2 filter3 filter 4">
+          <a class="hcard-link" href = "https://emilec.medium.com/working-as-a-strategy-consultant-a554d9e2cb59" target="_blank">
+            <div class="hcard-image">
+              <div style="position:relative; overflow:hidden; height: 100%;">
+                <!--div style="width: 100%;padding-bottom: 66.758%;"></div-->
+                  <img src="img/articles/img1.jpeg" class="hcard-image-imgStyle"></img>
+              </div>
+            </div>
+          </a>
+          <div class="hcard-description">
+            <span  class="hcard-header">  
+              Article
+              <span style="float:right;">01.01.2021</span>
+            </span>
+            
+            <div class="hcard-title">
+              <a href = "https://emilec.medium.com/working-as-a-strategy-consultant-a554d9e2cb59" target="_blank">
+              Working as a consultant?
+            </a>
+              
+            </div>
+            <span class="hcard-about">
+              <a href = "https://emilec.medium.com/working-as-a-strategy-consultant-a554d9e2cb59" target="_blank" style="color:white;">
+                The perfect job does not exist, but a good job that matches your personality does, and consulting might be the right one.
+              </a>
+              <span class="hcard-about-author">Emile Courthoud</span>
+            </span>
+            
+            <div class="hcard-footer">
+              <span style="color: #5CAFFF;">#strategy</span>
+              <span style="color: #EDB230">#communication</span>
+              <span style="color: #B4436C">#career</span>
+              <span style="color: #ACE4AA">#coaching</span>
+              <span style="color: #ACE4AA">#writing</span>
+              </br>
+              LaTeX, Markdown
+            </div>
+          </div>
+        </article>
+
+
+        <article class=" filterDiv filter1 filter2 hcard">
+          <a class="hcard-link">
             <div class="hcard-image">
               <div style="position:relative; overflow:hidden; height: 100%;">
                 <div style="width: 100%;padding-bottom: 66.758%;"></div>
@@ -147,15 +178,15 @@
               </div>
             </div>
           </a>
-            <a class="block" href="https://medium.com/p/a554d9e2cb59/" target="_blank"></a>
+          <div class="hcard-description">
             <span  class="hcard-header">  
               Article
               <span style="float:right;">01.01.2021</span>
             </span>
             
-            <span class="hcard-title">
+            <div class="hcard-title">
               Working as a consultant?
-            </span>
+            </div>
             <span class="hcard-about">The perfect job does not exist, but a good job that matches your personality does, and consulting might be the right one. 
               <span class="hcard-about-author">Emile Courthoud</span>
             </span>
@@ -169,224 +200,11 @@
               </br>
               LaTeX, Markdown
             </div>
-          </span>
+          </div>
         </article>
 
+    
 
-        <article class="hcard">
-          <a class="hcard-link" href="https://medium.com/p/a554d9e2cb59/" target="_blank">
-            <div class="hcard-image">
-              <div style="position:relative; overflow:hidden; height: 100%;">
-                <div style="width: 100%;padding-bottom: 66.758%;"></div>
-                <img src="img/articles/img1.jpeg" class="hcard-image-imgStyle">
-                </img>
-              </div>
-            </div>
-          </a>
-            <a class="block" href="https://medium.com/p/a554d9e2cb59/" target="_blank"></a>
-            <span  class="hcard-header">  
-              Article
-              <span style="float:right;">01.01.2021</span>
-            </span>
-            
-            <span class="hcard-title">
-              Working as a consultant?
-            </span>
-            <span class="hcard-about">The perfect job does not exist, but a good job that matches your personality does, and consulting might be the right one. 
-              <span class="hcard-about-author">Emile Courthoud</span>
-            </span>
-            
-            <div class="hcard-footer">
-              <span style="color: #5CAFFF;">#strategy</span>
-              <span style="color: #EDB230">#communication</span>
-              <span style="color: #B4436C">#career</span>
-              <span style="color: #ACE4AA">#coaching</span>
-              <span style="color: #ACE4AA">#writing</span>
-              </br>
-              LaTeX, Markdown
-            </div>
-          </span>
-        </article>
-
-        <article class="hcard">
-          <a class="hcard-link" href="https://medium.com/p/a554d9e2cb59/" target="_blank">
-            <div class="hcard-image">
-              <div style="position:relative; overflow:hidden; height: 100%;">
-                <div style="width: 100%;padding-bottom: 66.758%;"></div>
-                <img src="img/articles/img1.jpeg" class="hcard-image-imgStyle">
-                </img>
-              </div>
-            </div>
-          </a>
-            <a class="block" href="https://medium.com/p/a554d9e2cb59/" target="_blank"></a>
-            <span  class="hcard-header">  
-              Article
-              <span style="float:right;">01.01.2021</span>
-            </span>
-            
-            <span class="hcard-title">
-              Working as a consultant?
-            </span>
-            <span class="hcard-about">The perfect job does not exist, but a good job that matches your personality does, and consulting might be the right one. 
-              <span class="hcard-about-author">Emile Courthoud</span>
-            </span>
-            
-            <div class="hcard-footer">
-              <span style="color: #5CAFFF;">#strategy</span>
-              <span style="color: #EDB230">#communication</span>
-              <span style="color: #B4436C">#career</span>
-              <span style="color: #ACE4AA">#coaching</span>
-              <span style="color: #ACE4AA">#writing</span>
-              </br>
-              LaTeX, Markdown
-            </div>
-          </span>
-        </article>
-
-        <article class="hcard">
-          <a class="hcard-link" href="https://medium.com/p/a554d9e2cb59/" target="_blank">
-            <div class="hcard-image">
-              <div style="position:relative; overflow:hidden; height: 100%;">
-                <div style="width: 100%;padding-bottom: 66.758%;"></div>
-                <img src="img/articles/img1.jpeg" class="hcard-image-imgStyle">
-                </img>
-              </div>
-            </div>
-          </a>
-            <a class="block" href="https://medium.com/p/a554d9e2cb59/" target="_blank"></a>
-            <span  class="hcard-header">  
-              Article
-              <span style="float:right;">01.01.2021</span>
-            </span>
-            
-            <span class="hcard-title">
-              Working as a consultant?
-            </span>
-            <span class="hcard-about">The perfect job does not exist, but a good job that matches your personality does, and consulting might be the right one. 
-              <span class="hcard-about-author">Emile Courthoud</span>
-            </span>
-            
-            <div class="hcard-footer">
-              <span style="color: #5CAFFF;">#strategy</span>
-              <span style="color: #EDB230">#communication</span>
-              <span style="color: #B4436C">#career</span>
-              <span style="color: #ACE4AA">#coaching</span>
-              <span style="color: #ACE4AA">#writing</span>
-              </br>
-              LaTeX, Markdown
-            </div>
-          </span>
-        </article>
-
-        <article class="hcard">
-          <a class="hcard-link" href="https://medium.com/p/a554d9e2cb59/" target="_blank">
-            <div class="hcard-image">
-              <div style="position:relative; overflow:hidden; height: 100%;">
-                <div style="width: 100%;padding-bottom: 66.758%;"></div>
-                <img src="img/articles/img1.jpeg" class="hcard-image-imgStyle">
-                </img>
-              </div>
-            </div>
-          </a>
-            <a class="block" href="https://medium.com/p/a554d9e2cb59/" target="_blank"></a>
-            <span  class="hcard-header">  
-              Article
-              <span style="float:right;">01.01.2021</span>
-            </span>
-            
-            <span class="hcard-title">
-              Working as a consultant?
-            </span>
-            <span class="hcard-about">The perfect job does not exist, but a good job that matches your personality does, and consulting might be the right one. 
-              <span class="hcard-about-author">Emile Courthoud</span>
-            </span>
-            
-            <div class="hcard-footer">
-              <span style="color: #5CAFFF;">#strategy</span>
-              <span style="color: #EDB230">#communication</span>
-              <span style="color: #B4436C">#career</span>
-              <span style="color: #ACE4AA">#coaching</span>
-              <span style="color: #ACE4AA">#writing</span>
-              </br>
-              LaTeX, Markdown
-            </div>
-          </span>
-        </article>
-
-
-        <article class="hcard">
-          <a class="hcard-link" href="https://medium.com/p/a554d9e2cb59/" target="_blank">
-            <div class="hcard-image">
-              <div style="position:relative; overflow:hidden; height: 100%;">
-                <div style="width: 100%;padding-bottom: 66.758%;"></div>
-                <img src="img/articles/img1.jpeg" class="hcard-image-imgStyle">
-                </img>
-              </div>
-            </div>
-          </a>
-            <a class="block" href="https://medium.com/p/a554d9e2cb59/" target="_blank"></a>
-            <span  class="hcard-header">  
-              Article
-              <span style="float:right;">01.01.2021</span>
-            </span>
-            
-            <span class="hcard-title">
-              Working as a consultant?
-            </span>
-            <span class="hcard-about">The perfect job does not exist, but a good job that matches your personality does, and consulting might be the right one. 
-              <span class="hcard-about-author">Emile Courthoud</span>
-            </span>
-            
-            <div class="hcard-footer">
-              <span style="color: #5CAFFF;">#strategy</span>
-              <span style="color: #EDB230">#communication</span>
-              <span style="color: #B4436C">#career</span>
-              <span style="color: #ACE4AA">#coaching</span>
-              <span style="color: #ACE4AA">#writing</span>
-              </br>
-              LaTeX, Markdown
-            </div>
-          </span>
-        </article>
-
-
-        <article class="hcard">
-          <a class="hcard-link" href="https://medium.com/p/a554d9e2cb59/" target="_blank">
-            <div class="hcard-image">
-              <div style="position:relative; overflow:hidden; height: 100%;">
-                <div style="width: 100%;padding-bottom: 66.758%;"></div>
-                <img src="img/articles/img1.jpeg" class="hcard-image-imgStyle">
-                </img>
-              </div>
-            </div>
-          </a>
-            <a class="block" href="https://medium.com/p/a554d9e2cb59/" target="_blank"></a>
-            <span  class="hcard-header">  
-              Article
-              <span style="float:right;">01.01.2021</span>
-            </span>
-            
-            <span class="hcard-title">
-              Working as a consultant?
-            </span>
-            <span class="hcard-about">The perfect job does not exist, but a good job that matches your personality does, and consulting might be the right one. 
-              <span class="hcard-about-author">Emile Courthoud</span>
-            </span>
-            
-            <div class="hcard-footer">
-              <span style="color: #5CAFFF;">#strategy</span>
-              <span style="color: #EDB230">#communication</span>
-              <span style="color: #B4436C">#career</span>
-              <span style="color: #ACE4AA">#coaching</span>
-              <span style="color: #ACE4AA">#writing</span>
-              </br>
-              LaTeX, Markdown
-            </div>
-          </span>
-        </article>
-
-
-      
 
 
 
