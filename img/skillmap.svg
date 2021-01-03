@@ -1193,6 +1193,18 @@
        width="67.967125"
        height="20.697599"
        id="rect882" />
+    <rect
+       id="rect906-0-0-7-6-5-3-10"
+       height="7.5843676"
+       width="24.693461"
+       y="-16.819916"
+       x="42.610455" />
+    <rect
+       id="rect987"
+       height="20.697599"
+       width="67.967125"
+       y="-16.819916"
+       x="42.610455" />
   </defs>
   <sodipodi:namedview
      inkscape:snap-nodes="true"
@@ -1202,9 +1214,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.3765229"
-     inkscape:cx="334.47516"
-     inkscape:cy="477.77258"
+     inkscape:zoom="1.510409"
+     inkscape:cx="423.00993"
+     inkscape:cy="467.68531"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -2546,5 +2558,18 @@
          x="42.611328"
          y="-3.1153989"><tspan
            style="font-size:6.33803px">visualization</tspan></tspan></text>
+    <circle
+       style="fill:#edb230;fill-opacity:1;stroke:none;stroke-width:0.460396"
+       id="path865-1-1-4-8-8-3"
+       cx="124.19787"
+       cy="106.5288"
+       r="3.75" />
+    <text
+       transform="matrix(0.66792576,0,0,0.66792576,74.254652,115.70549)"
+       style="font-style:normal;font-weight:normal;font-size:5.28169000000000022px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect906-0-0-7-6-5-3-10);fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.7;stroke-miterlimit:4;stroke-dasharray:none;"
+       id="text904-9-3-3-8-6-6-2"
+       xml:space="preserve"><tspan
+         x="42.611328"
+         y="-12.001666"><tspan>Research</tspan></tspan></text>
   </g>
 </svg>
