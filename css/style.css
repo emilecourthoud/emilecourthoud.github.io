@@ -122,29 +122,26 @@ button {
 }
 
 .buttonSkill1, .buttonSkill2, .buttonSkill3, .buttonSkill4 {
-  width: 100%;
+  width: 270px;
+  border: 2px solid var(--color_bar);
 }
 
 .buttonSkill1 {
-	border: 2px solid var(--color_bar);
 	color: #5CAFFF;}
 .buttonSkill1:hover {
 	background-color: #5CAFFF;
 	color: white;}
 .buttonSkill2 {
-	border: 2px solid var(--color_bar);
 	color: #EDB230;}
 .buttonSkill2:hover {
 	background-color: #EDB230;
 	color: white;}
 .buttonSkill3 {
-	border: 2px solid var(--color_bar);
 	color: #B4436C;/*#EB5160;*/}
 .buttonSkill3:hover {
 	background-color: #B4436C;/*#EB5160;*/
 	color: white;}
 .buttonSkill4 {
-	border: 2px solid var(--color_bar);
 	color: #ACE4AA;}
 .buttonSkill4:hover {
 	background-color: #ACE4AA;
