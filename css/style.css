@@ -462,10 +462,44 @@ Logo contact
 
 .logo
 {
-  width:180px;
-  height:180px;
-  padding: 25px 10px 30px 10px;
+  width: 100px;
+  height:100px;
+  margin: 1.5rem 3rem 1.5rem 3rem;
 }
+
+.logoBox
+{
+  color: var(--color_main);
+  font-size:2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+
+
+
+/* Todo here */
+@media  (max-width: 767px){
+  #contact .logo{
+    width:115px;
+    height:115px;
+    margin: 0rem 1.5rem 0rem 1.5rem;
+  }
+
+  #contact .logoBox{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media  (min-width: 767px){
+  #contact .logoBox{
+    display: none;
+  }
+}
+
+
+
 
 /* ================================
 Articlesssssss hello
