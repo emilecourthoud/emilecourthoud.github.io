@@ -92,7 +92,7 @@ button {
 	text-decoration: none;
 	display: inline-block;
 	font-size:var(--fontSize_main);
-	margin: 2px 1px;
+	margin: 2px auto;
 	transition-duration: 0.4s;
 	cursor: pointer;
 	background-color: rgba(18,56,121,0.2)
