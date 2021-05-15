@@ -119,6 +119,11 @@ button {
 
 }
 
+button:hover{
+  color: var(--fontSize_main);
+}
+
+
 .newContainer{
   width:100%;
   margin-left: 5px;
@@ -127,7 +132,7 @@ button {
 }
 
 .btt.active {
-  border: 2px solid white;
+  border: 2px solid var(--fontSize_main);
   
 }
 
@@ -135,32 +140,24 @@ button {
 .buttonSkill1 {
 	color: #5CAFFF;}
 .buttonSkill1:hover {
-	background-color: #5CAFFF;
-	color: white;}
+	background-color: #5CAFFF;}
 .buttonSkill2 {
 	color: #EDB230;}
 .buttonSkill2:hover {
-	background-color: #EDB230;
-	color: white;}
+	background-color: #EDB230;}
 .buttonSkill3 {
 	color: #B4436C;/*#EB5160;*/}
 .buttonSkill3:hover {
-	background-color: #B4436C;/*#EB5160;*/
-	color: white;}
+	background-color: #B4436C;}
 .buttonSkill4 {
 	color: #ACE4AA;}
 .buttonSkill4:hover {
-	background-color: #ACE4AA;
-	color: white;}
+	background-color: #ACE4AA;}
 
 
 
 
-button.navbar-toggle {
-	background:var(--color_bar);
-	/*border: none;*/
-	color:var(--color_main);
-}
+
 
 
 
@@ -223,7 +220,6 @@ nav.navbar{
   z-index: 1003;
   overflow: hidden;
 	position: fixed;
-	padding: 4px 0px 4px 0px;
 	width: 100%;
 	background:var(--color_bar);
 	transition: all 300ms ease-in-out;
@@ -243,18 +239,21 @@ nav.navbar.fixed-to-top{
 	border-bottom: none;
 	/*opacity: 1;*/
 	display: none;
+  
 	
 }
 
 .navbar-default .navbar-nav>li>a {
+  padding-top: 25px;
 	font-weight: 300;
 	font-size:var(--fontSize_main);
 	color: var(--color_main);
+  height: 70px;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus{
 	color:var(--color_highligh);
-	border-radius: 15px;
+	border-radius: 1500px;
 	cursor: pointer;
 	-webkit-transition: all 300ms ease-in-out;
 	-moz-transition: all 300ms ease-in-out;
@@ -262,6 +261,16 @@ nav.navbar.fixed-to-top{
 	-o-transition: all 300ms ease-in-out;
 	transition: all 300ms ease-in-out;
 	outline: 0;
+}
+
+
+button.navbar-toggle {
+	background: var(--color_bar);
+	/*border: none;*/
+	color:var(--color_main);
+  height: 50px;
+  /*margin-top: auto 0;*/
+  width: 75px;
 }
 
 
@@ -483,6 +492,7 @@ Logo contact
 }
 
 
+
 @media  (min-width: 767px){
   #contact .logoBox{
     display: none;
@@ -494,7 +504,9 @@ Logo contact
 Projects - selectionSkills
 ================================= */
 
-
+#selectionSkills .container{
+  margin-top: 30px;
+}
 
 
 
