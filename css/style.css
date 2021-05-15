@@ -27,7 +27,7 @@ General
 	/*--color_background:#0F2A3B; /*bk6*/
 	--color_highligh:#F9AA33;
 	--color_bar:#123879;
-	--fontSize_main: 1.3rem;
+	--fontSize_main: 1.7rem;
 }
 
 
@@ -76,6 +76,14 @@ p.padding {
 	text-align: left;
 }
 
+.removeColPadding{
+  margin: -20px;
+}
+
+.addColPadding{
+  padding: 10px;
+}
+
 /* links */
 a {
 	position:relative;
@@ -87,44 +95,42 @@ a {
 }
 
 button {
-	padding: 16px 32px;
+  width: 237px;
+  height: 80px;
+  border: 2px solid var(--color_bar);
+  display: inline-block;
 	text-align: center;
 	text-decoration: none;
-	display: inline-block;
 	font-size:var(--fontSize_main);
-	margin: 2px auto;
+	margin: 11px 8px;
+  padding-left: 40px;
+  padding-right: 30px;
 	transition-duration: 0.4s;
 	cursor: pointer;
-	background-color: rgba(18,56,121,0.2)
-	/*
-	display: inline-block;
-	margin-bottom: 0;
-	margin-bottom: 10px;
-	padding: 6px 12px;
-	border: 1px solid transparent;
-	vertical-align: middle;
-	text-align: center;
-	white-space: nowrap;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 1.428571429;
-	cursor: pointer;
+	background-color: rgba(18,56,121,0.2);
+  
+  /*
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	-o-user-select: none;
 	user-select: none;
-	*/
+  */
+
+}
+
+.newContainer{
+  width:100%;
+  margin-left: 5px;
+  margin-right: 70px;
+  margin-bottom: 30px;
 }
 
 .btt.active {
   border: 2px solid white;
+  
 }
 
-.buttonSkill1, .buttonSkill2, .buttonSkill3, .buttonSkill4 {
-  width: 270px;
-  border: 2px solid var(--color_bar);
-}
 
 .buttonSkill1 {
 	color: #5CAFFF;}
@@ -289,10 +295,10 @@ Introduction
 	-ms-flex-align: center;
 	align-items: center;
 	position: absolute;
-	bottom: 0;
-	top: 0;
-	left: 0;
-	right: 0;
+	bottom: 10rem;
+	top: 10rem;
+	left: 10rem;
+	right: 10rem;
   }
 
 #introduction .portrait{
@@ -477,22 +483,6 @@ Logo contact
 }
 
 
-
-
-/* Todo here */
-@media  (max-width: 767px){
-  #contact .logo{
-    width:115px;
-    height:115px;
-    margin: 0rem 1.5rem 0rem 1.5rem;
-  }
-
-  #contact .logoBox{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
 @media  (min-width: 767px){
   #contact .logoBox{
     display: none;
@@ -500,10 +490,16 @@ Logo contact
 }
 
 
+/* ================================
+Projects - selectionSkills
+================================= */
+
+
+
 
 
 /* ================================
-Articlesssssss hello
+Articles
 ================================= */
 
 #site-main {
@@ -512,7 +508,7 @@ Articlesssssss hello
     -webkit-flex-grow: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
-    padding: 40px 10px 0 10px;
+    padding: 30px 6vw 10px 6vw;
     /*
     position: relative;
     padding: 0 4vw;
@@ -534,10 +530,6 @@ Articlesssssss hello
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 0 -20px;
-    padding: 40px 30px 0 30px;
-    margin-top: -70px;
-    padding-top: 0;
 }
 
 /* ================================
@@ -545,13 +537,13 @@ Subtitle
 ================================= */
 .subt {
   font-size: 2rem;
-  line-height: 1.15em;
+  line-height: 2.5rem;
   font-weight: 500;
   -webkit-letter-spacing: 0.5px;
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
 }
 
 /* ================================
@@ -571,7 +563,7 @@ An article
     -ms-flex-direction: column;
     flex-direction: column;
     overflow: hidden;
-    margin: 5px 20px 20px 20px;
+    margin: 15px;
     min-height: 300px;
     background: rgba(18,56,121,0.5) center center;
     background-size: cover;
