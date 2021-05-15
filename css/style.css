@@ -95,14 +95,14 @@ a {
 }
 
 button {
-  width: 237px;
+  width: 245px;
   height: 80px;
   border: 2px solid var(--color_bar);
   display: inline-block;
 	text-align: center;
 	text-decoration: none;
 	font-size:var(--fontSize_main);
-	margin: 11px 8px;
+	margin: 11px 4px;
   padding-left: 40px;
   padding-right: 30px;
 	transition-duration: 0.4s;
@@ -124,12 +124,31 @@ button:hover{
 }
 
 
-.newContainer{
+.containerButtons{
   width:100%;
   margin-left: 5px;
   margin-right: 70px;
   margin-bottom: 30px;
 }
+
+@media  (max-width: 1200px){
+  .containerButtons{
+    display: none;
+  }
+}
+
+.containerBulletPoints{
+  line-height: 1.5;
+  margin-top:6px;
+  margin-bottom:30px;
+}
+
+@media  (min-width: 1200px){
+  .containerBulletPoints{
+    display: none;
+  }
+}
+
 
 .btt.active {
   border: 2px solid var(--fontSize_main);
@@ -270,7 +289,7 @@ button.navbar-toggle {
 	color:var(--color_main);
   height: 50px;
   /*margin-top: auto 0;*/
-  width: 75px;
+  width: 60px;
 }
 
 button.navbar-toggle:active{background-color:red;color:red;}
@@ -406,7 +425,7 @@ Introduction
 #introduction .btn-get-started {
   z-index:1001;
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--fontSize_main);
   letter-spacing: 1px;
   display: inline-block;
   border-radius: 3px;
