@@ -348,9 +348,15 @@ Introduction
   position: relative;
   z-index: 999;
   color: var(--color_main);
-  margin: 10px auto 0 auto;
+  margin: 10px 20rem 0 2rem;
   font-size: 48px;
   font-weight: 550;
+
+  user-select: none; /* standard syntax */
+  -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+  -moz-user-select: none; /* mozilla browsers */
+  -khtml-user-select: none; /* webkit (konqueror) browsers */
+  -ms-user-select: none; /* IE10+ */
 }
 
 #introduction p {
