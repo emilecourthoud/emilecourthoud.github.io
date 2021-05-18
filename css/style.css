@@ -348,7 +348,8 @@ Introduction
   position: relative;
   z-index: 999;
   color: var(--color_main);
-  margin: 10px 20rem 0 2rem;
+  margin-top: 10px;
+  margin-bottom: 5;
   font-size: 48px;
   font-weight: 550;
 
